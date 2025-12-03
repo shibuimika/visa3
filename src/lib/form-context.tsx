@@ -16,7 +16,8 @@ type FormData = {
     passportIssueDate?: string;
     passportExpiryDate?: string;
     // Add other fields as needed
-    [key: string]: unknown;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    [key: string]: any;
 };
 
 type FormContextType = {
