@@ -1,4 +1,5 @@
 import * as React from "react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Upload, X, FileText } from "lucide-react"
 
@@ -55,7 +56,14 @@ export function FileUpload({ label, accept, onChange, value, error, className, f
                 {(value || fileName) ? (
                     <div className="relative flex w-full flex-col items-center space-y-2">
                         {preview ? (
-                            <img src={preview} alt="Preview" className="h-32 w-auto rounded object-cover" />
+                            <div className="relative h-40 w-full">
+                                <Image
+                                    src={preview}
+                                    alt="Preview"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
                         ) : (
                             <FileText className="h-12 w-12 text-blue-500" />
                         )}

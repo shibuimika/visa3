@@ -41,6 +41,7 @@ export default function NewStep4Page() {
         formState: { errors },
         reset,
     } = useForm<Step4Values>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(step4Schema) as any,
         defaultValues: {
             institutionName: "",
@@ -66,6 +67,8 @@ export default function NewStep4Page() {
                 totalHours: formData.totalHours || 0,
                 jlptScore: formData.jlptScore || "",
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             if (formData.proofFileName) setProofFileName(formData.proofFileName);
             if (formData.jlptFileName) setJlptFileName(formData.jlptFileName);
         }

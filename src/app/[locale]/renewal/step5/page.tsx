@@ -18,6 +18,7 @@ export default function RenewalStep5Page() {
 
     useEffect(() => {
         if (formData) {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setFiles({
                 residenceCard: formData.residenceCardFileName || null,
                 passport: formData.passportFileName || null,

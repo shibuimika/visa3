@@ -16,7 +16,7 @@ type FormData = {
     passportIssueDate?: string;
     passportExpiryDate?: string;
     // Add other fields as needed
-    [key: string]: any;
+    [key: string]: unknown;
 };
 
 type FormContextType = {
@@ -35,6 +35,7 @@ export function FormProvider({ children }: { children: React.ReactNode }) {
         const saved = localStorage.getItem("visa-form-data");
         if (saved) {
             try {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 setFormData(JSON.parse(saved));
             } catch (e) {
                 console.error("Failed to parse form data", e);

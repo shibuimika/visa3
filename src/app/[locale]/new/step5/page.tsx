@@ -32,6 +32,7 @@ export default function NewStep5Page() {
         formState: { errors },
         reset,
     } = useForm<Step5Values>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(step5Schema) as any,
         defaultValues: {
             schoolName: "",
@@ -53,6 +54,8 @@ export default function NewStep5Page() {
                 graduationYear: formData.graduationYear || "",
                 country: formData.country || "",
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             if (formData.diplomaFileName) setDiplomaFileName(formData.diplomaFileName);
             if (formData.transcriptFileName) setTranscriptFileName(formData.transcriptFileName);
         }

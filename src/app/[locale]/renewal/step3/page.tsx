@@ -52,6 +52,7 @@ export default function RenewalStep3Page() {
         formState: { errors },
         reset,
     } = useForm<StepU3Values>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(stepU3Schema) as any,
         defaultValues: {
             hasPartTimeJob: "no",

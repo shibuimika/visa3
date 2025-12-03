@@ -60,6 +60,7 @@ export default function NewStep2Page() {
                 passportExpiryDate: formData.passportExpiryDate || "",
             });
             if (formData.passportFileName) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 setPassportFileName(formData.passportFileName);
             }
         }

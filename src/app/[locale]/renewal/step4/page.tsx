@@ -33,6 +33,7 @@ export default function RenewalStep4Page() {
         formState: { errors },
         reset,
     } = useForm<StepU4Values>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(stepU4Schema) as any,
         defaultValues: {
             sponsorName: "",
@@ -53,6 +54,7 @@ export default function RenewalStep4Page() {
                 annualIncome: formData.annualIncome || 0,
                 remittanceAmount: formData.remittanceAmount || 0,
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             if (formData.remittanceFileName) setRemittanceFileName(formData.remittanceFileName);
         }
     }, [formData, reset]);

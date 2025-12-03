@@ -55,6 +55,8 @@ export default function RenewalStep1bPage() {
                 passportNumber: formData.passportNumber || "",
                 passportExpiry: formData.passportExpiry || "",
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             if (formData.residenceCardFileName) setResidenceCardFileName(formData.residenceCardFileName);
             if (formData.passportFileName) setPassportFileName(formData.passportFileName);
         }

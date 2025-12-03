@@ -1,0 +1,226 @@
+
+> temp_app@0.1.0 lint
+> eslint
+
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/layout.tsx
+  28:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step10/page.tsx
+  57:25  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step10/page.tsx:57:25
+  55 |     });
+  56 |
+> 57 |     const partTimeJob = watch("partTimeJob");
+     |                         ^^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  58 |
+  59 |     useEffect(() => {
+  60 |         if (formData) {  react-hooks/incompatible-library
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step2/page.tsx
+  63:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step2/page.tsx:63:17
+  61 |             });
+  62 |             if (formData.passportFileName) {
+> 63 |                 setPassportFileName(formData.passportFileName);
+     |                 ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  64 |             }
+  65 |         }
+  66 |     }, [formData, reset]);  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step4/page.tsx
+  44:47  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  69:41  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step4/page.tsx:69:41
+  67 |                 jlptScore: formData.jlptScore || "",
+  68 |             });
+> 69 |             if (formData.proofFileName) setProofFileName(formData.proofFileName);
+     |                                         ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  70 |             if (formData.jlptFileName) setJlptFileName(formData.jlptFileName);
+  71 |         }
+  72 |     }, [formData, reset]);  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step5/page.tsx
+  35:47  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-explicit-any
+  56:43  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step5/page.tsx:56:43
+  54 |                 country: formData.country || "",
+  55 |             });
+> 56 |             if (formData.diplomaFileName) setDiplomaFileName(formData.diplomaFileName);
+     |                                           ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  57 |             if (formData.transcriptFileName) setTranscriptFileName(formData.transcriptFileName);
+  58 |         }
+  59 |     }, [formData, reset]);  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step7/page.tsx
+  78:29  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step7/page.tsx:78:29
+  76 |     });
+  77 |
+> 78 |     const hasVisitedJapan = watch("hasVisitedJapan");
+     |                             ^^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  79 |     const hasAppliedVisa = watch("hasAppliedVisa");
+  80 |
+  81 |     useEffect(() => {  react-hooks/incompatible-library
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step9/page.tsx
+  39:47  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-explicit-any
+  70:43  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/new/step9/page.tsx:70:43
+  68 |                 annualIncome: formData.annualIncome || 0,
+  69 |             });
+> 70 |             if (formData.balanceFileName) setBalanceFileName(formData.balanceFileName);
+     |                                           ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  71 |             if (formData.statementFileName) setStatementFileName(formData.statementFileName);
+  72 |             if (formData.letterFileName) setLetterFileName(formData.letterFileName);
+  73 |         }  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step1b/page.tsx
+  58:49  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step1b/page.tsx:58:49
+  56 |                 passportExpiry: formData.passportExpiry || "",
+  57 |             });
+> 58 |             if (formData.residenceCardFileName) setResidenceCardFileName(formData.residenceCardFileName);
+     |                                                 ^^^^^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  59 |             if (formData.passportFileName) setPassportFileName(formData.passportFileName);
+  60 |         }
+  61 |     }, [formData, reset]);  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step2/page.tsx
+  34:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step3/page.tsx
+  55:48  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-explicit-any
+  65:28  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step3/page.tsx:65:28
+  63 |     });
+  64 |
+> 65 |     const hasPartTimeJob = watch("hasPartTimeJob");
+     |                            ^^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  66 |     const [payslipFile, setPayslipFile] = useState<File | null>(null);
+  67 |     const [payslipFileName, setPayslipFileName] = useState<string | null>(null);
+  68 |     const [fileError, setFileError] = useState<string | null>(null);  react-hooks/incompatible-library
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step4/page.tsx
+  36:48  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+  56:46  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step4/page.tsx:56:46
+  54 |                 remittanceAmount: formData.remittanceAmount || 0,
+  55 |             });
+> 56 |             if (formData.remittanceFileName) setRemittanceFileName(formData.remittanceFileName);
+     |                                              ^^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  57 |         }
+  58 |     }, [formData, reset]);
+  59 |  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step5/page.tsx
+  21:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/renewal/step5/page.tsx:21:13
+  19 |     useEffect(() => {
+  20 |         if (formData) {
+> 21 |             setFiles({
+     |             ^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |                 residenceCard: formData.residenceCardFileName || null,
+  23 |                 passport: formData.passportFileName || null,
+  24 |                 payslip: formData.payslipFileName || null,  react-hooks/set-state-in-effect
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/select-type/page.tsx
+  34:26  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/mika_shibui/AI/visa-ryugaku/src/app/[locale]/select-type/page.tsx:34:26
+  32 |     });
+  33 |
+> 34 |     const selectedType = watch("applicationType");
+     |                          ^^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  35 |
+  36 |     const onSubmit = (data: SelectTypeValues) => {
+  37 |         if (data.applicationType === "new") {  react-hooks/incompatible-library
+
+/Users/mika_shibui/AI/visa-ryugaku/src/components/form/FileUpload.tsx
+  58:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/mika_shibui/AI/visa-ryugaku/src/i18n/request.ts
+   3:10  warning  'notFound' is defined but never used      @typescript-eslint/no-unused-vars
+  12:56  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/mika_shibui/AI/visa-ryugaku/src/lib/form-context.tsx
+  19:20  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+  38:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/mika_shibui/AI/visa-ryugaku/src/lib/form-context.tsx:38:17
+  36 |         if (saved) {
+  37 |             try {
+> 38 |                 setFormData(JSON.parse(saved));
+     |                 ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  39 |             } catch (e) {
+  40 |                 console.error("Failed to parse form data", e);
+  41 |             }  react-hooks/set-state-in-effect
+
+✖ 23 problems (17 errors, 6 warnings)
+

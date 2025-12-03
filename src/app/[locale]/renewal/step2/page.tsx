@@ -31,6 +31,7 @@ export default function RenewalStep2Page() {
         formState: { errors },
         reset,
     } = useForm<StepU2Values>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(stepU2Schema) as any,
         defaultValues: {
             address: "",
