@@ -1,7 +1,18 @@
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './navigation';
 
-// Can be imported from a shared config
+// Static imports for all locale files
+import ja from './locales/ja.json';
+import en from './locales/en.json';
+import zh from './locales/zh.json';
+import vi from './locales/vi.json';
+
+const messages = {
+    ja,
+    en,
+    zh,
+    vi
+} as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {
     // This typically corresponds to the `[locale]` segment
@@ -15,6 +26,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
     return {
         locale,
-        messages: (await import(`./locales/${locale}.json`)).default
+        messages: messages[locale as keyof typeof messages]
     };
 });
