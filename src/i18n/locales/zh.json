@@ -1,0 +1,546 @@
+{
+    "common": {
+        "next": "下一步",
+        "back": "返回",
+        "submit": "提交",
+        "select": "请选择",
+        "copyright": "© {year} 日本语学校. All rights reserved.",
+        "login": "登录",
+        "required": "必填",
+        "optional": "选填",
+        "loading": "加载中...",
+        "error": "发生错误"
+    },
+    "home": {
+        "title": "留学签证申请表",
+        "welcome": "欢迎",
+        "selectLanguage": "选择语言",
+        "start": "开始申请",
+        "description": "在线轻松申请日本留学签证"
+    },
+    "login": {
+        "title": "登录",
+        "email": "电子邮箱",
+        "password": "密码",
+        "submit": "登录",
+        "forgotPassword": "忘记密码？",
+        "register": "在此注册",
+        "errors": {
+            "invalidEmail": "请输入有效的电子邮箱地址",
+            "required": "此项为必填项"
+        }
+    },
+    "selectType": {
+        "title": "请选择申请类型",
+        "description": "请选择适用的申请类型，然后点击\"下一步\"。",
+        "progress": "申请类型选择",
+        "new": {
+            "title": "新申请（COE）",
+            "description": "申请在留资格认定证明书。"
+        },
+        "renewal": {
+            "step1": {
+                "title": "基本信息输入",
+                "description": "请输入当前信息。",
+                "progress": "基本信息（更新）",
+                "name": "姓名",
+                "birthDate": "出生日期",
+                "nationality": "国籍",
+                "address": "现住所（日本）",
+                "phone": "电话号码",
+                "email": "电子邮箱",
+                "placeholders": {
+                    "name": "YAMADA TARO",
+                    "nationality": "China",
+                    "address": "东京都新宿区...",
+                    "phone": "090-1234-5678"
+                },
+                "errors": {
+                    "nameRequired": "姓名是必须的",
+                    "birthDateRequired": "出生日期是必须的",
+                    "nationalityRequired": "国籍是必须的",
+                    "addressRequired": "现住所是必须的",
+                    "phoneRequired": "电话号码是必须的",
+                    "emailInvalid": "请输入有效的电子邮箱地址"
+                }
+            },
+            "step1b": {
+                "title": "在留卡・护照信息",
+                "description": "请输入在留卡和护照信息。",
+                "progress": "在留卡・护照信息",
+                "sections": {
+                    "residenceCard": "在留卡信息",
+                    "passport": "护照信息"
+                },
+                "residenceCardNumber": "在留卡号码",
+                "residenceExpiry": "在留期限",
+                "passportNumber": "护照号码",
+                "passportExpiry": "护照有效期",
+                "files": {
+                    "residenceCard": "在留卡（双面）",
+                    "passport": "护照（照片页）"
+                },
+                "note": "※ 即使现在不上传，也可以稍后一起上传。",
+                "placeholders": {
+                    "residenceCardNumber": "AB12345678CD"
+                },
+                "errors": {
+                    "residenceCardNumberRequired": "在留卡号码是必须的",
+                    "residenceExpiryRequired": "在留期限是必须的",
+                    "passportNumberRequired": "护照号码是必须的",
+                    "passportExpiryRequired": "护照有效期是必须的"
+                }
+            },
+            "step2": {
+                "title": "生活状况输入",
+                "description": "请输入当前的生活状况。",
+                "progress": "生活状况",
+                "address": "现住所",
+                "rent": "房租（月额・日元）",
+                "supporter": "生活费负担者",
+                "placeholders": {
+                    "address": "东京都新宿区...",
+                    "rent": "50000"
+                },
+                "options": {
+                    "self": "本人（包括打工）",
+                    "family": "家族（汇款）",
+                    "scholarship": "奖学金",
+                    "other": "其他"
+                },
+                "errors": {
+                    "addressRequired": "现住所是必须的",
+                    "rentRequired": "请输入房租",
+                    "supporterRequired": "请选择生活费负担者"
+                }
+            },
+            "step3": {
+                "title": "打工信息",
+                "description": "目前有在打工吗？",
+                "progress": "打工信息",
+                "hasPartTimeJob": "有在打工吗？",
+                "employerName": "工作单位名称",
+                "employerAddress": "工作单位地址",
+                "weeklyHours": "周工作时间（小时）",
+                "monthlyIncome": "月收入（日元）",
+                "payslipFile": "工资明细（最近3个月）",
+                "yes": "有",
+                "no": "没有",
+                "errors": {
+                    "selectRequired": "请选择",
+                    "employerNameRequired": "工作单位名称是必须的",
+                    "employerAddressRequired": "工作单位地址是必须的",
+                    "weeklyHoursRequired": "周工作时间是必须的",
+                    "monthlyIncomeRequired": "月收入是必须的",
+                    "payslipFileRequired": "必须上传工资明细"
+                }
+            },
+            "step4": {
+                "title": "经费支付人信息",
+                "description": "请输入经费支付人（负担生活费的人）的信息。",
+                "progress": "经费支付人（更新）",
+                "sponsorName": "姓名",
+                "relation": "关系",
+                "annualIncome": "年收入（当地货币）",
+                "remittanceAmount": "月平均汇款额（日元）",
+                "remittanceFile": "汇款证明书（存折复印件等）",
+                "placeholders": {
+                    "relation": "父、母等",
+                    "remittanceAmount": "50000"
+                },
+                "errors": {
+                    "sponsorNameRequired": "姓名是必须的",
+                    "relationRequired": "关系是必须的",
+                    "annualIncomeRequired": "年收入是必须的"
+                }
+            },
+            "step5": {
+                "title": "文件上传确认",
+                "description": "请确认所有必要文件是否已上传。",
+                "progress": "文件确认",
+                "labels": {
+                    "residenceCard": "在留卡（双面）",
+                    "passport": "护照（照片页）",
+                    "payslip": "工资明细",
+                    "remittance": "汇款证明书"
+                },
+                "status": {
+                    "uploaded": "已提交",
+                    "notUploaded": "未提交",
+                    "required": "必须"
+                },
+                "buttons": {
+                    "replace": "更换文件",
+                    "upload": "上传文件",
+                    "next": "前往确认画面"
+                }
+            },
+            "step6": {
+                "title": "确认输入内容",
+                "description": "将申请以下内容。如果没问题，请点击'提交'。",
+                "progress": "确认・提交",
+                "sections": {
+                    "basicInfo": "基本信息",
+                    "residenceInfo": "在留卡・护照信息",
+                    "livingInfo": "生活状况",
+                    "partTimeJobInfo": "打工信息",
+                    "sponsorInfo": "经费支付人",
+                    "documents": "提交文件确认"
+                },
+                "labels": {
+                    "name": "姓名",
+                    "birthDate": "出生日期",
+                    "nationality": "国籍",
+                    "address": "现住所",
+                    "phone": "电话号码",
+                    "email": "电子邮箱",
+                    "residenceCard": "在留卡",
+                    "residenceCardNumber": "在留卡号码",
+                    "residenceExpiry": "在留期限",
+                    "passport": "护照",
+                    "passportNumber": "护照号码",
+                    "passportExpiry": "有效期",
+                    "rent": "房租（月额）",
+                    "supporter": "生活费负担者",
+                    "partTimeJob": "打工",
+                    "employerName": "工作单位名称",
+                    "employerAddress": "工作单位地址",
+                    "weeklyHours": "周工作时间",
+                    "monthlyIncome": "月收入",
+                    "sponsorName": "姓名",
+                    "relation": "关系",
+                    "annualIncome": "年收入",
+                    "remittanceAmount": "月平均汇款额"
+                },
+                "files": {
+                    "residenceCardFileName": "在留卡（双面）",
+                    "passportFileName": "护照（照片页）",
+                    "payslipFileName": "工资明细（如果有打工）",
+                    "remittanceFileName": "汇款证明书（如果有汇款）",
+                    "optional": "(任意)"
+                },
+                "incompleteFiles": "※ 必须文件尚未全部上传。请返回上一步确认。",
+                "yes": "有",
+                "no": "无"
+            }
+        },
+        "errors": {
+            "selectType": "请选择申请类型"
+        }
+    },
+    "newApplication": {
+        "step1": {
+            "title": "基本信息",
+            "description": "请输入您的基本信息。",
+            "progress": "基本信息",
+            "nameRomaji": "姓名（罗马字）",
+            "nameNative": "姓名（母语）",
+            "birthDate": "出生日期",
+            "nationality": "国籍",
+            "homeAddress": "本国地址",
+            "homePhone": "本国电话号码",
+            "email": "电子邮箱",
+            "nationalitySelect": "请选择",
+            "nationalityOptions": {
+                "China": "中国",
+                "Vietnam": "越南",
+                "Nepal": "尼泊尔",
+                "Other": "其他"
+            },
+            "placeholders": {
+                "nameRomaji": "YAMADA TARO",
+                "nameNative": "山田太郎",
+                "nationality": "China",
+                "homeAddress": "北京市朝阳区某某街123号",
+                "homePhone": "+86-123-4567-8901",
+                "email": "example@email.com"
+            },
+            "errors": {
+                "nameRomajiRequired": "罗马字姓名为必填项",
+                "nameNativeRequired": "母语姓名为必填项",
+                "birthDateRequired": "出生日期为必填项",
+                "nationalityRequired": "国籍为必填项",
+                "homeAddressRequired": "本国地址为必填项",
+                "homePhoneRequired": "本国电话号码为必填项",
+                "homePhoneInvalid": "电话号码只能包含数字和符号",
+                "emailRequired": "电子邮箱为必填项",
+                "emailInvalid": "请输入有效的电子邮箱地址"
+            }
+        },
+        "step2": {
+            "title": "护照信息",
+            "description": "请输入您的护照信息并上传照片页。",
+            "progress": "护照信息",
+            "passportNumber": "护照号码",
+            "passportIssueDate": "签发日期",
+            "passportExpiryDate": "有效期至",
+            "passportFile": "护照照片页",
+            "placeholders": {
+                "passportNumber": "TR1234567"
+            },
+            "errors": {
+                "passportNumberRequired": "护照号码为必填项",
+                "passportIssueDateRequired": "签发日期为必填项",
+                "passportExpiryDateRequired": "有效期为必填项",
+                "passportExpiryInvalid": "有效期必须晚于签发日期",
+                "passportFileRequired": "必须上传护照图片"
+            }
+        },
+        "step3": {
+            "title": "家庭与紧急联系人",
+            "description": "请输入您的家庭信息和紧急联系人。",
+            "progress": "家庭与紧急联系人",
+            "father": "父亲信息",
+            "mother": "母亲信息",
+            "emergencyContact": "紧急联系人（必填）",
+            "name": "姓名",
+            "birthDate": "出生日期",
+            "occupation": "职业",
+            "address": "地址",
+            "relation": "关系",
+            "phone": "电话号码",
+            "placeholders": {
+                "relation": "例如：父亲、母亲、叔叔等"
+            },
+            "errors": {
+                "nameRequired": "姓名为必填项",
+                "relationRequired": "关系为必填项",
+                "phoneRequired": "电话号码为必填项"
+            }
+        },
+        "step4": {
+            "title": "日语学习经历",
+            "description": "请输入您迄今为止的日语学习经历。",
+            "progress": "日语学习经历",
+            "institutionName": "学习机构名称",
+            "periodStart": "学习期间（开始）",
+            "periodEnd": "学习期间（结束）",
+            "totalHours": "总学习时间（小时）",
+            "proofFile": "日语学习证明书（必填）",
+            "jlptSection": "日语能力考试（选填）",
+            "jlptScore": "JLPT/NAT/J.TEST等分数",
+            "jlptFile": "合格证书/成绩单",
+            "placeholders": {
+                "institutionName": "例如：东京日语学校",
+                "totalHours": "150",
+                "jlptScore": "例如：JLPT N3 合格"
+            },
+            "errors": {
+                "institutionNameRequired": "学习机构名称为必填项",
+                "periodStartRequired": "开始日期为必填项",
+                "periodEndRequired": "结束日期为必填项",
+                "totalHoursRequired": "总学习时间为必填项",
+                "periodEndInvalid": "结束日期必须晚于开始日期",
+                "proofFileRequired": "必须上传日语学习证明书"
+            }
+        },
+        "step5": {
+            "title": "学历信息",
+            "description": "请输入您的最终学历信息。",
+            "progress": "学历信息",
+            "schoolName": "最终毕业学校名称",
+            "graduationYear": "毕业年份",
+            "country": "所在地（国家）",
+            "diplomaFile": "毕业证书（必填）",
+            "transcriptFile": "成绩单（必填）",
+            "placeholders": {
+                "schoolName": "例如：北京大学",
+                "graduationYear": "2023",
+                "country": "中国"
+            },
+            "errors": {
+                "schoolNameRequired": "最终毕业学校名称为必填项",
+                "graduationYearRequired": "毕业年份为必填项",
+                "countryRequired": "所在地为必填项",
+                "diplomaFileRequired": "毕业证书",
+                "transcriptFileRequired": "成绩单",
+                "filesRequired": "必须上传以下文件："
+            }
+        },
+        "step6": {
+            "title": "工作经历",
+            "description": "如有工作经历，请输入。如果没有，请直接点击“下一步”。",
+            "progress": "工作经历（选填）",
+            "companyName": "公司名称",
+            "period": "在职期间",
+            "jobDescription": "工作内容",
+            "placeholders": {
+                "companyName": "例如：ABC有限公司",
+                "period": "例如：2020年4月〜2023年3月",
+                "jobDescription": "简要输入工作内容"
+            }
+        },
+        "step7": {
+            "title": "赴日经历与在留资格申请历",
+            "description": "请输入您赴日的经历以及过去的申请经历。",
+            "progress": "赴日经历与申请历",
+            "hasVisitedJapan": "您过去是否去过日本？",
+            "visitDate": "最近一次赴日时间",
+            "visitPurpose": "赴日目的",
+            "hasAppliedVisa": "您过去是否申请过日本的在留资格？（包括被拒签的情况）",
+            "applicationDetails": "申请概要",
+            "yes": "是",
+            "no": "否",
+            "placeholders": {
+                "visitPurpose": "旅游、短期留学等",
+                "applicationDetails": "何时申请了何种资格？结果如何？"
+            },
+            "errors": {
+                "selectRequired": "请选择",
+                "visitDateRequired": "请输入赴日时间",
+                "visitPurposeRequired": "请输入目的",
+                "applicationDetailsRequired": "请输入详细信息",
+                "minLength": "请输入50个字符以上"
+            }
+        },
+        "step9": {
+            "title": "经费支付人信息",
+            "description": "请输入支付留学费用的人员（经费支付人）的信息。",
+            "progress": "经费支付人信息",
+            "sponsorType": "经费支付人关系",
+            "name": "姓名",
+            "phone": "电话号码",
+            "address": "地址",
+            "occupation": "职业",
+            "employer": "工作单位名称",
+            "annualIncome": "年收入（当地货币）",
+            "requiredDocuments": "所需文件",
+            "balanceFile": "存款证明（必须）",
+            "statementFile": "银行流水（过去6个月）（必须）",
+            "letterFile": "经费支付书（必须）",
+            "options": {
+                "father": "父亲",
+                "mother": "母亲",
+                "self": "本人",
+                "other": "其他"
+            },
+            "errors": {
+                "selectRequired": "请选择",
+                "nameRequired": "姓名为必填项",
+                "phoneRequired": "电话号码为必填项",
+                "addressRequired": "地址为必填项",
+                "occupationRequired": "职业为必填项",
+                "employerRequired": "工作单位名称为必填项",
+                "annualIncomeRequired": "年收入为必填项",
+                "balanceFileRequired": "存款证明",
+                "statementFileRequired": "银行流水",
+                "letterFileRequired": "经费支付书",
+                "filesRequired": "必须上传以下文件："
+            }
+        },
+        "step10": {
+            "title": "在留期间的生活计划",
+            "description": "请输入您在日本的生活计划。",
+            "progress": "生活计划",
+            "plannedAddress": "预定住所",
+            "supporter": "生活费支付人",
+            "partTimeJob": "是否有打工计划？",
+            "partTimeJobReason": "理由",
+            "yes": "是",
+            "no": "否",
+            "next": "前往确认页面",
+            "options": {
+                "dormitory": "学生宿舍",
+                "apartment": "公寓",
+                "relative": "亲戚/朋友家",
+                "undecided": "未定",
+                "self": "本人",
+                "family": "家属（经费支付人）",
+                "scholarship": "奖学金",
+                "other": "其他"
+            },
+            "placeholders": {
+                "partTimeJobReason": "为了补贴生活费，为了积累社会经验等"
+            },
+            "errors": {
+                "inputRequired": "请输入",
+                "selectRequired": "请选择",
+                "reasonRequired": "请输入理由"
+            }
+        },
+        "confirm": {
+            "title": "确认与提交",
+            "pageTitle": "确认输入内容",
+            "description": "将使用以下内容进行申请。如果没问题，请点击“提交”。",
+            "sections": {
+                "basicInfo": "基本信息",
+                "passportInfo": "护照信息",
+                "familyInfo": "家庭与紧急联系人",
+                "japaneseStudy": "日语学习经历",
+                "education": "最终学历",
+                "workHistory": "工作经历",
+                "travelHistory": "赴日经历",
+                "studyPurpose": "留学目的",
+                "financialSponsor": "经费支付人",
+                "lifePlan": "在日生活计划",
+                "documents": "文件确认"
+            },
+            "labels": {
+                "nameRomaji": "姓名（罗马字）",
+                "nameNative": "姓名（母语）",
+                "birthDate": "出生日期",
+                "nationality": "国籍",
+                "homeAddress": "本国地址",
+                "homePhone": "本国电话",
+                "email": "电子邮箱",
+                "passportNumber": "护照号码",
+                "issueDate": "签发日期",
+                "expiryDate": "有效期至",
+                "father": "父亲",
+                "mother": "母亲",
+                "emergencyContact": "紧急联系人",
+                "name": "姓名",
+                "occupation": "职业",
+                "relation": "关系",
+                "phone": "电话号码",
+                "institutionName": "学习机构",
+                "period": "学习期间",
+                "totalHours": "总学时",
+                "jlptScore": "JLPT",
+                "schoolName": "学校名称",
+                "graduationYear": "毕业年份",
+                "major": "专业",
+                "companyName": "公司名称",
+                "workPeriod": "工作期间",
+                "jobDescription": "工作内容",
+                "hasVisitedJapan": "访日经历",
+                "visitDate": "访问时间",
+                "visitPurpose": "目的",
+                "hasAppliedVisa": "签证申请历",
+                "applicationDetails": "详细信息",
+                "reasonForJapan": "留学理由",
+                "reasonForSchool": "择校理由",
+                "futurePlan": "未来计划",
+                "sponsorType": "类型",
+                "address": "地址",
+                "employer": "工作单位",
+                "annualIncome": "年收入",
+                "plannedAddress": "预定住所",
+                "supporter": "生活费支付人",
+                "partTimeJob": "打工计划",
+                "partTimeJobReason": "理由"
+            },
+            "files": {
+                "passportFileName": "护照（照片页）",
+                "proofFileName": "日语学习证明书",
+                "jlptFileName": "JLPT/NAT/J.TEST等合格证书",
+                "diplomaFileName": "最终学历毕业证书",
+                "transcriptFileName": "最终学历成绩单",
+                "balanceFileName": "存款证明",
+                "statementFileName": "银行流水（过去6个月）",
+                "letterFileName": "经费支付书",
+                "optional": "（选填）"
+            },
+            "submit": "提交",
+            "incompleteFiles": "※ 必须上传的文件不完整。请返回上一步进行确认。",
+            "yes": "有",
+            "no": "无"
+        }
+    },
+    "complete": {
+        "title": "申请完成",
+        "message": "您的申请已成功提交。感谢您的配合。",
+        "nextSteps": "请等待学校联系。",
+        "backToHome": "返回首页"
+    }
+}

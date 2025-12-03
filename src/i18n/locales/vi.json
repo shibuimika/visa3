@@ -1,0 +1,567 @@
+{
+    "common": {
+        "next": "Tiếp theo",
+        "back": "Quay lại",
+        "submit": "Gửi",
+        "select": "Vui lòng chọn",
+        "copyright": "© {year} Trường Nhật ngữ. All rights reserved.",
+        "login": "Đăng nhập",
+        "required": "Bắt buộc",
+        "optional": "Tùy chọn",
+        "loading": "Đang tải...",
+        "error": "Đã xảy ra lỗi"
+    },
+    "home": {
+        "title": "Đơn xin visa du học",
+        "welcome": "Chào mừng",
+        "selectLanguage": "Chọn ngôn ngữ",
+        "start": "Bắt đầu đăng ký",
+        "description": "Đăng ký visa du học Nhật Bản trực tuyến một cách dễ dàng"
+    },
+    "login": {
+        "title": "Đăng nhập",
+        "email": "Địa chỉ email",
+        "password": "Mật khẩu",
+        "submit": "Đăng nhập",
+        "forgotPassword": "Quên mật khẩu?",
+        "register": "Đăng ký tại đây",
+        "errors": {
+            "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+            "required": "Trường này là bắt buộc"
+        }
+    },
+    "selectType": {
+        "title": "Chọn loại đơn đăng ký",
+        "description": "Vui lòng chọn loại đơn đăng ký phù hợp và nhấp 'Tiếp theo'.",
+        "progress": "Chọn loại đơn đăng ký",
+        "new": {
+            "title": "Đơn mới (COE)",
+            "description": "Đăng ký Giấy chứng nhận đủ điều kiện."
+        },
+        "renewal": {
+            "step1": {
+                "title": "Nhập thông tin cơ bản",
+                "description": "Vui lòng nhập thông tin hiện tại.",
+                "progress": "Thông tin cơ bản (Gia hạn)",
+                "name": "Họ tên",
+                "birthDate": "Ngày sinh",
+                "nationality": "Quốc tịch",
+                "address": "Địa chỉ hiện tại (Nhật Bản)",
+                "phone": "Số điện thoại",
+                "email": "Email",
+                "placeholders": {
+                    "name": "YAMADA TARO",
+                    "nationality": "China",
+                    "address": "Shinjuku-ku, Tokyo...",
+                    "phone": "090-1234-5678"
+                },
+                "errors": {
+                    "nameRequired": "Họ tên là bắt buộc",
+                    "birthDateRequired": "Ngày sinh là bắt buộc",
+                    "nationalityRequired": "Quốc tịch là bắt buộc",
+                    "addressRequired": "Địa chỉ hiện tại là bắt buộc",
+                    "phoneRequired": "Số điện thoại là bắt buộc",
+                    "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ"
+                }
+            },
+            "step1b": {
+                "title": "Thông tin thẻ cư trú & hộ chiếu",
+                "description": "Vui lòng nhập thông tin thẻ cư trú và hộ chiếu.",
+                "progress": "Thẻ cư trú & Hộ chiếu",
+                "sections": {
+                    "residenceCard": "Thông tin thẻ cư trú",
+                    "passport": "Thông tin hộ chiếu"
+                },
+                "residenceCardNumber": "Số thẻ cư trú",
+                "residenceExpiry": "Thời hạn lưu trú",
+                "passportNumber": "Số hộ chiếu",
+                "passportExpiry": "Ngày hết hạn hộ chiếu",
+                "files": {
+                    "residenceCard": "Thẻ cư trú (Hai mặt)",
+                    "passport": "Hộ chiếu (Trang ảnh)"
+                },
+                "note": "* Bạn có thể tải lên sau nếu chưa có ngay bây giờ.",
+                "placeholders": {
+                    "residenceCardNumber": "AB12345678CD"
+                },
+                "errors": {
+                    "residenceCardNumberRequired": "Số thẻ cư trú là bắt buộc",
+                    "residenceExpiryRequired": "Thời hạn lưu trú là bắt buộc",
+                    "passportNumberRequired": "Số hộ chiếu là bắt buộc",
+                    "passportExpiryRequired": "Ngày hết hạn hộ chiếu là bắt buộc"
+                }
+            },
+            "step2": {
+                "title": "Nhập tình trạng sinh hoạt",
+                "description": "Vui lòng nhập tình trạng sinh hoạt hiện tại.",
+                "progress": "Tình trạng sinh hoạt",
+                "address": "Địa chỉ hiện tại",
+                "rent": "Tiền thuê nhà (Hàng tháng/Yên)",
+                "supporter": "Người hỗ trợ chi phí sinh hoạt",
+                "placeholders": {
+                    "address": "Shinjuku-ku, Tokyo...",
+                    "rent": "50000"
+                },
+                "options": {
+                    "self": "Bản thân (Bao gồm làm thêm)",
+                    "family": "Gia đình (Gửi tiền)",
+                    "scholarship": "Học bổng",
+                    "other": "Khác"
+                },
+                "errors": {
+                    "addressRequired": "Địa chỉ hiện tại là bắt buộc",
+                    "rentRequired": "Vui lòng nhập tiền thuê nhà",
+                    "supporterRequired": "Vui lòng chọn người hỗ trợ"
+                }
+            },
+            "step3": {
+                "title": "Thông tin làm thêm",
+                "description": "Hiện tại bạn có làm thêm không?",
+                "progress": "Làm thêm",
+                "hasPartTimeJob": "Bạn có làm thêm không?",
+                "employerName": "Tên nơi làm việc",
+                "employerAddress": "Địa chỉ nơi làm việc",
+                "weeklyHours": "Số giờ làm việc mỗi tuần",
+                "monthlyIncome": "Thu nhập hàng tháng (Yên)",
+                "payslipFile": "Phiếu lương (3 tháng gần nhất)",
+                "yes": "Có",
+                "no": "Không",
+                "errors": {
+                    "selectRequired": "Vui lòng chọn",
+                    "employerNameRequired": "Tên nơi làm việc là bắt buộc",
+                    "employerAddressRequired": "Địa chỉ là bắt buộc",
+                    "weeklyHoursRequired": "Số giờ làm việc là bắt buộc",
+                    "monthlyIncomeRequired": "Thu nhập hàng tháng là bắt buộc",
+                    "payslipFileRequired": "Bắt buộc tải lên phiếu lương"
+                }
+            },
+            "step4": {
+                "title": "Thông tin người bảo lãnh tài chính",
+                "description": "Vui lòng nhập thông tin về người bảo lãnh tài chính.",
+                "progress": "Người bảo lãnh (Gia hạn)",
+                "sponsorName": "Họ tên",
+                "relation": "Mối quan hệ",
+                "annualIncome": "Thu nhập hàng năm (Tiền tệ địa phương)",
+                "remittanceAmount": "Số tiền gửi hàng tháng (Yên)",
+                "remittanceFile": "Giấy chứng nhận gửi tiền (Bản sao sổ ngân hàng, v.v.)",
+                "placeholders": {
+                    "relation": "Cha, Mẹ, v.v.",
+                    "remittanceAmount": "50000"
+                },
+                "errors": {
+                    "sponsorNameRequired": "Họ tên là bắt buộc",
+                    "relationRequired": "Mối quan hệ là bắt buộc",
+                    "annualIncomeRequired": "Thu nhập hàng năm là bắt buộc"
+                }
+            },
+            "step5": {
+                "title": "Xác nhận tải lên tài liệu",
+                "description": "Vui lòng kiểm tra xem tất cả tài liệu cần thiết đã được tải lên chưa.",
+                "progress": "Kiểm tra tài liệu",
+                "labels": {
+                    "residenceCard": "Thẻ cư trú (Hai mặt)",
+                    "passport": "Hộ chiếu (Trang ảnh)",
+                    "payslip": "Phiếu lương",
+                    "remittance": "Giấy chứng nhận gửi tiền"
+                },
+                "status": {
+                    "uploaded": "Đã tải lên",
+                    "notUploaded": "Chưa tải lên",
+                    "required": "Bắt buộc"
+                },
+                "buttons": {
+                    "replace": "Thay thế tệp",
+                    "upload": "Tải lên tệp",
+                    "next": "Tiếp tục xác nhận"
+                }
+            },
+            "step6": {
+                "title": "Xác nhận nội dung nhập",
+                "description": "Sẽ đăng ký với nội dung dưới đây. Nếu không có vấn đề gì, hãy nhấn 'Nộp'.",
+                "progress": "Xác nhận & Nộp",
+                "sections": {
+                    "basicInfo": "Thông tin cơ bản",
+                    "residenceInfo": "Thẻ cư trú & Hộ chiếu",
+                    "livingInfo": "Tình trạng sinh hoạt",
+                    "partTimeJobInfo": "Thông tin làm thêm",
+                    "sponsorInfo": "Người bảo lãnh tài chính",
+                    "documents": "Xác minh tài liệu"
+                },
+                "labels": {
+                    "name": "Họ tên",
+                    "birthDate": "Ngày sinh",
+                    "nationality": "Quốc tịch",
+                    "address": "Địa chỉ hiện tại",
+                    "phone": "Số điện thoại",
+                    "email": "Email",
+                    "residenceCard": "Thẻ cư trú",
+                    "residenceCardNumber": "Số thẻ cư trú",
+                    "residenceExpiry": "Thời hạn lưu trú",
+                    "passport": "Hộ chiếu",
+                    "passportNumber": "Số hộ chiếu",
+                    "passportExpiry": "Ngày hết hạn",
+                    "rent": "Tiền thuê nhà (Hàng tháng)",
+                    "supporter": "Người hỗ trợ",
+                    "partTimeJob": "Làm thêm",
+                    "employerName": "Nơi làm việc",
+                    "employerAddress": "Địa chỉ làm việc",
+                    "weeklyHours": "Số giờ làm việc",
+                    "monthlyIncome": "Thu nhập hàng tháng",
+                    "sponsorName": "Họ tên",
+                    "relation": "Mối quan hệ",
+                    "annualIncome": "Thu nhập hàng năm",
+                    "remittanceAmount": "Số tiền gửi hàng tháng"
+                },
+                "files": {
+                    "residenceCardFileName": "Thẻ cư trú (Hai mặt)",
+                    "passportFileName": "Hộ chiếu (Trang ảnh)",
+                    "payslipFileName": "Phiếu lương (Nếu có làm thêm)",
+                    "remittanceFileName": "Giấy chứng nhận gửi tiền (Nếu có hỗ trợ)",
+                    "optional": "(Tùy chọn)"
+                },
+                "incompleteFiles": "* Tài liệu bắt buộc chưa đầy đủ. Vui lòng quay lại các bước trước để tải lên.",
+                "yes": "Có",
+                "no": "Không"
+            }
+        },
+        "errors": {
+            "selectType": "Vui lòng chọn loại đơn đăng ký"
+        }
+    },
+    "newApplication": {
+        "step1": {
+            "title": "Thông tin cơ bản",
+            "description": "Vui lòng nhập thông tin cơ bản của bạn.",
+            "progress": "Thông tin cơ bản",
+            "nameRomaji": "Tên (Romaji)",
+            "nameNative": "Tên (Tiếng mẹ đẻ)",
+            "birthDate": "Ngày sinh",
+            "nationality": "Quốc tịch",
+            "homeAddress": "Địa chỉ quê nhà",
+            "homePhone": "Số điện thoại quê nhà",
+            "email": "Địa chỉ email",
+            "nationalitySelect": "Vui lòng chọn",
+            "nationalityOptions": {
+                "China": "Trung Quốc",
+                "Vietnam": "Việt Nam",
+                "Nepal": "Nepal",
+                "Other": "Khác"
+            },
+            "placeholders": {
+                "nameRomaji": "YAMADA TARO",
+                "nameNative": "Nguyễn Văn A",
+                "nationality": "Vietnam",
+                "homeAddress": "123 Đường Chính, Hà Nội",
+                "homePhone": "+84-123-456-789",
+                "email": "example@email.com"
+            },
+            "errors": {
+                "nameRomajiRequired": "Tên (Romaji) là bắt buộc",
+                "nameNativeRequired": "Tên (Tiếng mẹ đẻ) là bắt buộc",
+                "birthDateRequired": "Ngày sinh là bắt buộc",
+                "nationalityRequired": "Quốc tịch là bắt buộc",
+                "homeAddressRequired": "Địa chỉ quê nhà là bắt buộc",
+                "homePhoneRequired": "Số điện thoại quê nhà là bắt buộc",
+                "homePhoneInvalid": "Số điện thoại chỉ được chứa số và ký hiệu",
+                "emailRequired": "Địa chỉ email là bắt buộc",
+                "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ"
+            }
+        },
+        "step2": {
+            "title": "Thông tin hộ chiếu",
+            "description": "Vui lòng nhập thông tin hộ chiếu của bạn và tải lên trang ảnh.",
+            "progress": "Thông tin hộ chiếu",
+            "passportNumber": "Số hộ chiếu",
+            "passportIssueDate": "Ngày cấp",
+            "passportExpiryDate": "Ngày hết hạn",
+            "passportFile": "Trang ảnh hộ chiếu",
+            "placeholders": {
+                "passportNumber": "TR1234567"
+            },
+            "errors": {
+                "passportNumberRequired": "Số hộ chiếu là bắt buộc",
+                "passportIssueDateRequired": "Ngày cấp là bắt buộc",
+                "passportExpiryDateRequired": "Ngày hết hạn là bắt buộc",
+                "passportExpiryInvalid": "Ngày hết hạn phải sau ngày cấp",
+                "passportFileRequired": "Bắt buộc tải lên hình ảnh hộ chiếu"
+            }
+        },
+        "step3": {
+            "title": "Gia đình & Liên hệ khẩn cấp",
+            "description": "Vui lòng nhập thông tin gia đình và liên hệ khẩn cấp.",
+            "progress": "Gia đình & Liên hệ",
+            "father": "Thông tin cha",
+            "mother": "Thông tin mẹ",
+            "emergencyContact": "Liên hệ khẩn cấp (Bắt buộc)",
+            "name": "Họ và tên",
+            "birthDate": "Ngày sinh",
+            "occupation": "Nghề nghiệp",
+            "address": "Địa chỉ",
+            "relation": "Mối quan hệ",
+            "phone": "Số điện thoại",
+            "placeholders": {
+                "relation": "Ví dụ: Cha, Mẹ, Chú, v.v."
+            },
+            "errors": {
+                "nameRequired": "Họ tên là bắt buộc",
+                "relationRequired": "Mối quan hệ là bắt buộc",
+                "phoneRequired": "Số điện thoại là bắt buộc"
+            }
+        },
+        "step4": {
+            "title": "Lịch sử học tiếng Nhật",
+            "description": "Vui lòng nhập lịch sử học tiếng Nhật của bạn.",
+            "progress": "Lịch sử học tiếng Nhật",
+            "institutionName": "Tên cơ sở đào tạo",
+            "periodStart": "Thời gian học (Bắt đầu)",
+            "periodEnd": "Thời gian học (Kết thúc)",
+            "totalHours": "Tổng số giờ học",
+            "proofFile": "Giấy chứng nhận học tiếng Nhật (Bắt buộc)",
+            "jlptSection": "Kỳ thi năng lực tiếng Nhật (Tùy chọn)",
+            "jlptScore": "Điểm JLPT/NAT/J.TEST, v.v.",
+            "jlptFile": "Chứng chỉ/Bảng điểm",
+            "placeholders": {
+                "institutionName": "Ví dụ: Trường Nhật ngữ Tokyo",
+                "totalHours": "150",
+                "jlptScore": "Ví dụ: Đậu JLPT N3"
+            },
+            "errors": {
+                "institutionNameRequired": "Tên cơ sở đào tạo là bắt buộc",
+                "periodStartRequired": "Ngày bắt đầu là bắt buộc",
+                "periodEndRequired": "Ngày kết thúc là bắt buộc",
+                "totalHoursRequired": "Tổng số giờ học là bắt buộc",
+                "periodEndInvalid": "Ngày kết thúc phải sau ngày bắt đầu",
+                "proofFileRequired": "Bắt buộc tải lên giấy chứng nhận học tiếng Nhật"
+            }
+        },
+        "step5": {
+            "title": "Trình độ học vấn",
+            "description": "Vui lòng nhập trình độ học vấn cuối cùng của bạn.",
+            "progress": "Học vấn",
+            "schoolName": "Tên trường cuối cùng",
+            "graduationYear": "Năm tốt nghiệp",
+            "country": "Địa điểm (Quốc gia)",
+            "diplomaFile": "Bằng tốt nghiệp (Bắt buộc)",
+            "transcriptFile": "Bảng điểm (Bắt buộc)",
+            "placeholders": {
+                "schoolName": "Ví dụ: Đại học Bắc Kinh",
+                "graduationYear": "2023",
+                "country": "Trung Quốc"
+            },
+            "errors": {
+                "schoolNameRequired": "Tên trường cuối cùng là bắt buộc",
+                "graduationYearRequired": "Năm tốt nghiệp là bắt buộc",
+                "countryRequired": "Quốc gia là bắt buộc",
+                "diplomaFileRequired": "Bằng tốt nghiệp",
+                "transcriptFileRequired": "Bảng điểm",
+                "filesRequired": "Bắt buộc tải lên các tài liệu sau: "
+            }
+        },
+        "step6": {
+            "title": "Lịch sử làm việc",
+            "description": "Vui lòng nhập lịch sử làm việc nếu có. Nếu không, vui lòng nhấn 'Tiếp theo'.",
+            "progress": "Lịch sử làm việc (Tùy chọn)",
+            "companyName": "Tên công ty",
+            "period": "Thời gian làm việc",
+            "jobDescription": "Mô tả công việc",
+            "placeholders": {
+                "companyName": "Ví dụ: Công ty ABC",
+                "period": "Ví dụ: 04/2020 - 03/2023",
+                "jobDescription": "Mô tả ngắn gọn công việc"
+            }
+        },
+        "step7": {
+            "title": "Lịch sử du lịch & cư trú",
+            "description": "Vui lòng nhập lịch sử du lịch đến Nhật Bản và các đơn xin thị thực trước đây.",
+            "progress": "Du lịch & Cư trú",
+            "hasVisitedJapan": "Bạn đã từng đến Nhật Bản chưa?",
+            "visitDate": "Ngày đến gần nhất",
+            "visitPurpose": "Mục đích chuyến đi",
+            "hasAppliedVisa": "Bạn đã từng nộp đơn xin thị thực Nhật Bản chưa? (Bao gồm cả bị từ chối)",
+            "applicationDetails": "Chi tiết đơn xin",
+            "yes": "Có",
+            "no": "Không",
+            "placeholders": {
+                "visitPurpose": "Du lịch, Du học ngắn hạn, v.v.",
+                "applicationDetails": "Bạn đã nộp đơn xin loại thị thực nào và khi nào? Kết quả ra sao?"
+            },
+            "errors": {
+                "selectRequired": "Vui lòng chọn",
+                "visitDateRequired": "Vui lòng nhập ngày đến",
+                "visitPurposeRequired": "Vui lòng nhập mục đích",
+                "applicationDetailsRequired": "Vui lòng nhập chi tiết"
+            }
+        },
+        "step8": {
+            "title": "Mục đích du học & Kế hoạch tương lai",
+            "description": "Vui lòng giải thích lý do du học Nhật Bản và kế hoạch sau khi tốt nghiệp.",
+            "progress": "Mục đích & Kế hoạch",
+            "reasonForJapan": "Tại sao bạn muốn du học Nhật Bản? (Trên 50 ký tự)",
+            "reasonForSchool": "Tại sao bạn chọn trường này? (Trên 50 ký tự)",
+            "futurePlan": "Kế hoạch sau khi tốt nghiệp",
+            "options": {
+                "study": "Học lên cao (Đại học/Cao học)",
+                "work": "Đi làm",
+                "undecided": "Chưa quyết định / Về nước"
+            },
+            "placeholders": {
+                "reasonForJapan": "Vui lòng mô tả chi tiết lý do",
+                "reasonForSchool": "Vui lòng mô tả lý do",
+                "select": "Vui lòng chọn"
+            },
+            "errors": {
+                "minLength": "Vui lòng nhập ít nhất 50 ký tự",
+                "selectRequired": "Vui lòng chọn"
+            }
+        },
+        "step9": {
+            "title": "Thông tin người bảo lãnh tài chính",
+            "description": "Vui lòng nhập thông tin về người sẽ chi trả chi phí du học của bạn (Người bảo lãnh tài chính).",
+            "progress": "Người bảo lãnh",
+            "sponsorType": "Mối quan hệ với người nộp đơn",
+            "name": "Họ và tên",
+            "phone": "Số điện thoại",
+            "address": "Địa chỉ",
+            "occupation": "Nghề nghiệp",
+            "employer": "Tên nơi làm việc",
+            "annualIncome": "Thu nhập hàng năm (Tiền tệ địa phương)",
+            "requiredDocuments": "Tài liệu bắt buộc",
+            "balanceFile": "Giấy chứng nhận số dư (Bắt buộc)",
+            "statementFile": "Sao kê ngân hàng (6 tháng qua) (Bắt buộc)",
+            "letterFile": "Giấy bảo lãnh tài chính (Bắt buộc)",
+            "options": {
+                "father": "Cha",
+                "mother": "Mẹ",
+                "self": "Bản thân",
+                "other": "Khác"
+            },
+            "errors": {
+                "selectRequired": "Vui lòng chọn",
+                "nameRequired": "Họ và tên là bắt buộc",
+                "phoneRequired": "Số điện thoại là bắt buộc",
+                "addressRequired": "Địa chỉ là bắt buộc",
+                "occupationRequired": "Nghề nghiệp là bắt buộc",
+                "employerRequired": "Tên nơi làm việc là bắt buộc",
+                "annualIncomeRequired": "Thu nhập hàng năm là bắt buộc",
+                "balanceFileRequired": "Giấy chứng nhận số dư",
+                "statementFileRequired": "Sao kê ngân hàng",
+                "letterFileRequired": "Giấy bảo lãnh tài chính",
+                "filesRequired": "Bắt buộc tải lên các tài liệu sau: "
+            }
+        },
+        "step10": {
+            "title": "Kế hoạch cuộc sống tại Nhật Bản",
+            "description": "Vui lòng nhập kế hoạch sinh sống tại Nhật Bản.",
+            "progress": "Kế hoạch cuộc sống",
+            "plannedAddress": "Địa chỉ dự kiến",
+            "supporter": "Người hỗ trợ tài chính",
+            "partTimeJob": "Bạn có dự định làm thêm không?",
+            "partTimeJobReason": "Lý do",
+            "yes": "Có",
+            "no": "Không",
+            "next": "Tiếp tục xác nhận",
+            "options": {
+                "dormitory": "Ký túc xá sinh viên",
+                "apartment": "Căn hộ",
+                "relative": "Nhà người thân/bạn bè",
+                "undecided": "Chưa quyết định",
+                "self": "Bản thân",
+                "family": "Gia đình (Người bảo lãnh)",
+                "scholarship": "Học bổng",
+                "other": "Khác"
+            },
+            "placeholders": {
+                "partTimeJobReason": "Để trang trải chi phí sinh hoạt, tích lũy kinh nghiệm xã hội, v.v."
+            },
+            "errors": {
+                "inputRequired": "Vui lòng nhập",
+                "selectRequired": "Vui lòng chọn",
+                "reasonRequired": "Vui lòng nhập lý do"
+            }
+        },
+        "confirm": {
+            "title": "Xác nhận & Nộp",
+            "pageTitle": "Xác nhận thông tin",
+            "description": "Vui lòng kiểm tra lại thông tin đăng ký dưới đây. Nếu mọi thứ đều chính xác, hãy nhấn 'Nộp'.",
+            "sections": {
+                "basicInfo": "Thông tin cơ bản",
+                "passportInfo": "Thông tin hộ chiếu",
+                "familyInfo": "Gia đình & Liên hệ khẩn cấp",
+                "japaneseStudy": "Lịch sử học tiếng Nhật",
+                "education": "Trình độ học vấn",
+                "workHistory": "Lịch sử làm việc",
+                "travelHistory": "Lịch sử du lịch",
+                "studyPurpose": "Mục đích du học",
+                "financialSponsor": "Người bảo lãnh tài chính",
+                "lifePlan": "Kế hoạch cuộc sống",
+                "documents": "Xác minh tài liệu"
+            },
+            "labels": {
+                "nameRomaji": "Họ tên (Romaji)",
+                "nameNative": "Họ tên (Tiếng mẹ đẻ)",
+                "birthDate": "Ngày sinh",
+                "nationality": "Quốc tịch",
+                "homeAddress": "Địa chỉ thường trú",
+                "homePhone": "Số điện thoại",
+                "email": "Email",
+                "passportNumber": "Số hộ chiếu",
+                "issueDate": "Ngày cấp",
+                "expiryDate": "Ngày hết hạn",
+                "father": "Cha",
+                "mother": "Mẹ",
+                "emergencyContact": "Liên hệ khẩn cấp",
+                "name": "Họ tên",
+                "occupation": "Nghề nghiệp",
+                "relation": "Mối quan hệ",
+                "phone": "Số điện thoại",
+                "institutionName": "Tên cơ sở đào tạo",
+                "period": "Thời gian",
+                "totalHours": "Tổng số giờ",
+                "jlptScore": "JLPT",
+                "schoolName": "Tên trường",
+                "graduationYear": "Năm tốt nghiệp",
+                "major": "Chuyên ngành",
+                "companyName": "Tên công ty",
+                "workPeriod": "Thời gian làm việc",
+                "jobDescription": "Mô tả công việc",
+                "hasVisitedJapan": "Đã từng đến Nhật",
+                "visitDate": "Ngày đến",
+                "visitPurpose": "Mục đích",
+                "hasAppliedVisa": "Lịch sử xin thị thực",
+                "applicationDetails": "Chi tiết",
+                "reasonForJapan": "Lý do đến Nhật",
+                "reasonForSchool": "Lý do chọn trường",
+                "futurePlan": "Kế hoạch tương lai",
+                "sponsorType": "Loại",
+                "address": "Địa chỉ",
+                "employer": "Nơi làm việc",
+                "annualIncome": "Thu nhập hàng năm",
+                "plannedAddress": "Địa chỉ dự kiến",
+                "supporter": "Người hỗ trợ",
+                "partTimeJob": "Làm thêm",
+                "partTimeJobReason": "Lý do"
+            },
+            "files": {
+                "passportFileName": "Hộ chiếu (Trang ảnh)",
+                "proofFileName": "Chứng chỉ tiếng Nhật",
+                "jlptFileName": "Chứng chỉ JLPT/NAT/J.TEST",
+                "diplomaFileName": "Bằng tốt nghiệp",
+                "transcriptFileName": "Bảng điểm",
+                "balanceFileName": "Giấy chứng nhận số dư",
+                "statementFileName": "Sao kê ngân hàng (6 tháng)",
+                "letterFileName": "Giấy bảo lãnh tài chính",
+                "optional": "(Tùy chọn)"
+            },
+            "submit": "Nộp",
+            "incompleteFiles": "* Tài liệu bắt buộc chưa đầy đủ. Vui lòng quay lại các bước trước để tải lên.",
+            "yes": "Có",
+            "no": "Không"
+        }
+    },
+    "complete": {
+        "title": "Hoàn thành đăng ký",
+        "message": "Đơn của bạn đã được gửi thành công. Cảm ơn sự hợp tác của bạn.",
+        "nextSteps": "Vui lòng chờ liên lạc từ trường.",
+        "backToHome": "Quay lại trang chủ"
+    }
+}

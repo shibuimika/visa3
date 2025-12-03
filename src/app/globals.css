@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Happy Hues Palette 13 - Light Theme Adaptation */
+  --background: #fffffe;
+  --foreground: #0f0e17;
+
+  --card: #ffffff;
+  --card-foreground: #0f0e17;
+
+  --popover: #ffffff;
+  --popover-foreground: #0f0e17;
+
+  --primary: #ff8906;
+  /* Button - Orange */
+  --primary-foreground: #fffffe;
+  /* Button text - White */
+
+  --secondary: #f25f4c;
+  /* Secondary - Coral */
+  --secondary-foreground: #fffffe;
+
+  --muted: #f5f5f7;
+  /* Light gray for muted areas */
+  --muted-foreground: #6e6e80;
+  /* Darker gray for secondary text */
+
+  --accent: #e53170;
+  /* Tertiary - Magenta */
+  --accent-foreground: #fffffe;
+
+  --destructive: #f25f4c;
+  --destructive-foreground: #fffffe;
+
+  --border: #d1d1d6;
+  /* Medium gray for visible borders */
+  --input: #ffffff;
+  /* White input background */
+  --input-foreground: #0f0e17;
+  /* Dark text for input */
+  --input-border: #c7c7cc;
+  /* Visible input border */
+  --ring: #ff8906;
+  /* Highlight - Orange */
+
+  --radius: 0.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-foreground: var(--input-foreground);
+  --color-input-border: var(--input-border);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

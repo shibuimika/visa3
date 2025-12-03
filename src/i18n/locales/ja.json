@@ -1,0 +1,564 @@
+{
+    "common": {
+        "next": "次へ",
+        "back": "戻る",
+        "submit": "提出する",
+        "select": "選択してください",
+        "copyright": "© {year} 日本語学校. All rights reserved.",
+        "login": "ログイン",
+        "required": "必須",
+        "optional": "任意",
+        "loading": "読み込み中...",
+        "error": "エラーが発生しました"
+    },
+    "home": {
+        "title": "留学ビザ申請フォーム",
+        "welcome": "ようこそ",
+        "selectLanguage": "言語を選択",
+        "start": "申請を始める",
+        "description": "日本への留学ビザ申請をオンラインで簡単に"
+    },
+    "login": {
+        "title": "ログイン",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "submit": "ログイン",
+        "forgotPassword": "パスワードをお忘れの方はこちら",
+        "register": "新規登録はこちら",
+        "errors": {
+            "invalidEmail": "有効なメールアドレスを入力してください",
+            "required": "この項目は必須です"
+        }
+    },
+    "selectType": {
+        "title": "申請区分を選択してください",
+        "description": "該当する申請内容を選択して「次へ」を押してください。",
+        "progress": "申請区分の選択",
+        "new": {
+            "title": "日本へ新しく留学する(COE 取得)",
+            "description": "在留資格認定証明書の交付申請を行います。"
+        },
+        "renewal": {
+            "step1": {
+                "title": "基本情報の入力",
+                "description": "現在の情報を入力してください。",
+                "progress": "基本情報（更新）",
+                "name": "氏名",
+                "birthDate": "生年月日",
+                "nationality": "国籍",
+                "address": "現住所（日本）",
+                "phone": "電話番号",
+                "email": "メールアドレス",
+                "placeholders": {
+                    "name": "YAMADA TARO",
+                    "nationality": "China",
+                    "address": "東京都新宿区...",
+                    "phone": "090-1234-5678"
+                },
+                "errors": {
+                    "nameRequired": "氏名は必須です",
+                    "birthDateRequired": "生年月日は必須です",
+                    "nationalityRequired": "国籍は必須です",
+                    "addressRequired": "現住所は必須です",
+                    "phoneRequired": "電話番号は必須です",
+                    "emailInvalid": "有効なメールアドレスを入力してください"
+                }
+            },
+            "step1b": {
+                "title": "在留カード・パスポート情報",
+                "description": "在留カードとパスポートの情報を入力してください。",
+                "progress": "在留カード・パスポート情報",
+                "sections": {
+                    "residenceCard": "在留カード情報",
+                    "passport": "パスポート情報"
+                },
+                "residenceCardNumber": "在留カード番号",
+                "residenceExpiry": "在留期限",
+                "passportNumber": "パスポート番号",
+                "passportExpiry": "パスポート有効期限",
+                "files": {
+                    "residenceCard": "在留カード（両面）",
+                    "passport": "パスポート（写真ページ）"
+                },
+                "note": "※ ここでアップロードしなくても、後でまとめてアップロードできます。",
+                "placeholders": {
+                    "residenceCardNumber": "AB12345678CD"
+                },
+                "errors": {
+                    "residenceCardNumberRequired": "在留カード番号は必須です",
+                    "residenceExpiryRequired": "在留期限は必須です",
+                    "passportNumberRequired": "パスポート番号は必須です",
+                    "passportExpiryRequired": "パスポート有効期限は必須です"
+                }
+            },
+            "step2": {
+                "title": "生活状況の入力",
+                "description": "現在の生活状況について入力してください。",
+                "progress": "生活状況",
+                "address": "現住所",
+                "rent": "家賃（月額・円）",
+                "supporter": "生活費負担者",
+                "placeholders": {
+                    "address": "東京都新宿区...",
+                    "rent": "50000"
+                },
+                "options": {
+                    "self": "本人（アルバイト含む）",
+                    "family": "家族（仕送り）",
+                    "scholarship": "奨学金",
+                    "other": "その他"
+                },
+                "errors": {
+                    "addressRequired": "現住所は必須です",
+                    "rentRequired": "家賃を入力してください",
+                    "supporterRequired": "生活費負担者を選択してください"
+                }
+            },
+            "step3": {
+                "title": "アルバイト情報",
+                "description": "現在、アルバイトをしていますか？",
+                "progress": "アルバイト情報",
+                "hasPartTimeJob": "アルバイトをしていますか？",
+                "employerName": "勤務先名",
+                "employerAddress": "勤務先住所",
+                "weeklyHours": "週の勤務時間（時間）",
+                "monthlyIncome": "月収（円）",
+                "payslipFile": "給与明細（直近3ヶ月分）",
+                "yes": "はい",
+                "no": "いいえ",
+                "errors": {
+                    "selectRequired": "選択してください",
+                    "employerNameRequired": "勤務先名は必須です",
+                    "employerAddressRequired": "住所は必須です",
+                    "weeklyHoursRequired": "週の勤務時間は必須です",
+                    "monthlyIncomeRequired": "月収は必須です",
+                    "payslipFileRequired": "給与明細のアップロードは必須です"
+                }
+            },
+            "step4": {
+                "title": "経費支弁者情報",
+                "description": "経費支弁者（生活費を負担している方）について入力してください。",
+                "progress": "経費支弁者（更新）",
+                "sponsorName": "氏名",
+                "relation": "続柄",
+                "annualIncome": "年間収入（現地通貨）",
+                "remittanceAmount": "月平均仕送り額（円）",
+                "remittanceFile": "送金証明書（通帳のコピーなど）",
+                "placeholders": {
+                    "relation": "父、母など",
+                    "remittanceAmount": "50000"
+                },
+                "errors": {
+                    "sponsorNameRequired": "氏名は必須です",
+                    "relationRequired": "続柄は必須です",
+                    "annualIncomeRequired": "年収は必須です"
+                }
+            },
+            "step5": {
+                "title": "書類アップロード確認",
+                "description": "必要な書類がすべてアップロードされているか確認してください。",
+                "progress": "書類確認",
+                "labels": {
+                    "residenceCard": "在留カード（両面）",
+                    "passport": "パスポート（写真ページ）",
+                    "payslip": "給与明細",
+                    "remittance": "送金証明書"
+                },
+                "status": {
+                    "uploaded": "提出済み",
+                    "notUploaded": "未提出",
+                    "required": "必須"
+                },
+                "buttons": {
+                    "replace": "ファイルを差し替える",
+                    "upload": "ファイルをアップロード",
+                    "next": "確認画面へ"
+                }
+            },
+            "step6": {
+                "title": "入力内容の確認",
+                "description": "以下の内容で申請します。よろしければ「提出する」を押してください。",
+                "progress": "確認・提出",
+                "sections": {
+                    "basicInfo": "基本情報",
+                    "residenceInfo": "在留カード・パスポート情報",
+                    "livingInfo": "生活状況",
+                    "partTimeJobInfo": "アルバイト情報",
+                    "sponsorInfo": "経費支弁者",
+                    "documents": "提出書類確認"
+                },
+                "labels": {
+                    "name": "氏名",
+                    "birthDate": "生年月日",
+                    "nationality": "国籍",
+                    "address": "現住所",
+                    "phone": "電話番号",
+                    "email": "メールアドレス",
+                    "residenceCard": "在留カード",
+                    "residenceCardNumber": "在留カード番号",
+                    "residenceExpiry": "在留期限",
+                    "passport": "パスポート",
+                    "passportNumber": "パスポート番号",
+                    "passportExpiry": "有効期限",
+                    "rent": "家賃（月額）",
+                    "supporter": "生活費負担者",
+                    "partTimeJob": "アルバイト",
+                    "employerName": "勤務先名",
+                    "employerAddress": "勤務先住所",
+                    "weeklyHours": "週の勤務時間",
+                    "monthlyIncome": "月収",
+                    "sponsorName": "氏名",
+                    "relation": "続柄",
+                    "annualIncome": "年間収入",
+                    "remittanceAmount": "月平均仕送り額"
+                },
+                "files": {
+                    "residenceCardFileName": "在留カード（両面）",
+                    "passportFileName": "パスポート（写真ページ）",
+                    "payslipFileName": "給与明細（アルバイトしている場合）",
+                    "remittanceFileName": "送金証明書（仕送りがある場合）",
+                    "optional": "(任意)"
+                },
+                "incompleteFiles": "※ 必須書類がすべてアップロードされていません。前のステップに戻って確認してください。",
+                "yes": "あり",
+                "no": "なし"
+            }
+        },
+        "errors": {
+            "selectType": "申請区分を選択してください"
+        }
+    },
+    "newApplication": {
+        "step1": {
+            "title": "基本情報の入力",
+            "description": "あなたの基本情報を入力してください。",
+            "progress": "基本情報",
+            "nameRomaji": "氏名（ローマ字）",
+            "nameNative": "氏名（母国語）",
+            "birthDate": "生年月日",
+            "nationality": "国籍",
+            "homeAddress": "本国の住所",
+            "homePhone": "本国の電話番号",
+            "email": "メールアドレス",
+            "nationalitySelect": "選択してください",
+            "nationalityOptions": {
+                "China": "中国",
+                "Vietnam": "ベトナム",
+                "Nepal": "ネパール",
+                "Other": "その他"
+            },
+            "placeholders": {
+                "nameRomaji": "YAMADA TARO",
+                "nameNative": "山田太郎",
+                "nationality": "China",
+                "homeAddress": "住所を入力",
+                "homePhone": "+81 90-1234-5678",
+                "email": "example@email.com"
+            },
+            "errors": {
+                "nameRomajiRequired": "氏名（ローマ字）は必須です",
+                "nameNativeRequired": "氏名（母国語）は必須です",
+                "birthDateRequired": "生年月日は必須です",
+                "nationalityRequired": "国籍は必須です",
+                "homeAddressRequired": "本国の住所は必須です",
+                "homePhoneRequired": "本国の電話番号は必須です",
+                "homePhoneInvalid": "電話番号は数字と記号のみ使用できます",
+                "emailRequired": "メールアドレスは必須です",
+                "emailInvalid": "有効なメールアドレスを入力してください"
+            }
+        },
+        "step2": {
+            "title": "パスポート情報の入力",
+            "description": "パスポートの情報を入力し、写真ページをアップロードしてください。",
+            "progress": "パスポート情報",
+            "passportNumber": "パスポート番号",
+            "passportIssueDate": "発行日",
+            "passportExpiryDate": "有効期限",
+            "passportFile": "パスポート写真ページ",
+            "placeholders": {
+                "passportNumber": "TR1234567"
+            },
+            "errors": {
+                "passportNumberRequired": "パスポート番号は必須です",
+                "passportIssueDateRequired": "発行日は必須です",
+                "passportExpiryDateRequired": "有効期限は必須です",
+                "passportExpiryInvalid": "有効期限は発行日より後である必要があります",
+                "passportFileRequired": "パスポート画像のアップロードは必須です"
+            }
+        },
+        "step3": {
+            "title": "家族・緊急連絡先",
+            "description": "ご家族の情報と、緊急時の連絡先を入力してください。",
+            "progress": "家族・緊急連絡先",
+            "father": "父の情報",
+            "mother": "母の情報",
+            "emergencyContact": "緊急連絡先（必須）",
+            "name": "氏名",
+            "birthDate": "生年月日",
+            "occupation": "職業",
+            "address": "住所",
+            "relation": "続柄",
+            "phone": "電話番号",
+            "placeholders": {
+                "relation": "例: 父、母、叔父など"
+            },
+            "errors": {
+                "nameRequired": "氏名は必須です",
+                "relationRequired": "続柄は必須です",
+                "phoneRequired": "電話番号は必須です"
+            }
+        },
+        "step4": {
+            "title": "日本語学習歴",
+            "description": "これまでの日本語学習について入力してください。",
+            "progress": "日本語学習歴",
+            "institutionName": "学習機関名",
+            "periodStart": "学習期間（開始）",
+            "periodEnd": "学習期間（終了）",
+            "totalHours": "総学習時間（時間）",
+            "proofFile": "日本語学習証明書（必須）",
+            "jlptSection": "日本語能力試験（任意）",
+            "jlptScore": "JLPT/NAT/J.TEST等のスコア",
+            "jlptFile": "合格証書・スコア票",
+            "placeholders": {
+                "institutionName": "例: 東京日本語学校",
+                "totalHours": "150",
+                "jlptScore": "例: JLPT N3 合格"
+            },
+            "errors": {
+                "institutionNameRequired": "学習機関名は必須です",
+                "periodStartRequired": "開始日は必須です",
+                "periodEndRequired": "終了日は必須です",
+                "totalHoursRequired": "総学習時間は必須です",
+                "periodEndInvalid": "終了日は開始日より後である必要があります",
+                "proofFileRequired": "日本語学習証明書のアップロードは必須です"
+            }
+        },
+        "step5": {
+            "title": "学歴の入力",
+            "description": "最終学歴について入力してください。",
+            "progress": "学歴",
+            "schoolName": "最終学校名",
+            "graduationYear": "卒業年",
+            "country": "所在地（国）",
+            "diplomaFile": "卒業証明書（必須）",
+            "transcriptFile": "成績証明書（必須）",
+            "placeholders": {
+                "schoolName": "例: 北京大学",
+                "graduationYear": "2023",
+                "country": "中国"
+            },
+            "errors": {
+                "schoolNameRequired": "最終学校名は必須です",
+                "graduationYearRequired": "卒業年は必須です",
+                "countryRequired": "所在国は必須です",
+                "diplomaFileRequired": "卒業証明書",
+                "transcriptFileRequired": "成績証明書",
+                "filesRequired": "以下の書類のアップロードは必須です: "
+            }
+        },
+        "step6": {
+            "title": "職歴の入力",
+            "description": "職歴がある場合は入力してください。ない場合はそのまま「次へ」を押してください。",
+            "progress": "職歴（任意）",
+            "companyName": "会社名",
+            "period": "在籍期間",
+            "jobDescription": "業務内容",
+            "placeholders": {
+                "companyName": "例: 株式会社ABC",
+                "period": "例: 2020年4月〜2023年3月",
+                "jobDescription": "業務内容を簡単に入力"
+            }
+        },
+        "step7": {
+            "title": "渡航歴・在留歴",
+            "description": "日本への渡航歴や、過去の申請歴について入力してください。",
+            "progress": "渡航歴・在留歴",
+            "hasVisitedJapan": "過去に日本へ来たことがありますか？",
+            "visitDate": "直近の渡航時期",
+            "visitPurpose": "渡航目的",
+            "hasAppliedVisa": "過去に日本の在留資格を申請したことがありますか？（不許可含む）",
+            "applicationDetails": "申請の概要",
+            "yes": "はい",
+            "no": "いいえ",
+            "placeholders": {
+                "visitPurpose": "観光、短期留学など",
+                "applicationDetails": "いつ、どのような資格を申請しましたか？結果はどうでしたか？"
+            },
+            "errors": {
+                "selectRequired": "選択してください",
+                "visitDateRequired": "渡航時期を入力してください",
+                "visitPurposeRequired": "目的を入力してください",
+                "applicationDetailsRequired": "詳細を入力してください"
+            }
+        },
+        "step8": {
+            "title": "留学目的・進路",
+            "description": "日本への留学理由と、卒業後の進路について教えてください。",
+            "progress": "留学目的・進路",
+            "reasonForJapan": "なぜ日本に留学したいですか？（50文字以上）",
+            "reasonForSchool": "この学校を選んだ理由（50文字以上）",
+            "futurePlan": "卒業後の進路",
+            "options": {
+                "study": "進学（大学・大学院など）",
+                "work": "就職",
+                "undecided": "未定・帰国"
+            },
+            "placeholders": {
+                "reasonForJapan": "理由を詳しく書いてください",
+                "reasonForSchool": "理由を書いてください",
+                "select": "選択してください"
+            },
+            "errors": {
+                "minLength": "50文字以上で入力してください",
+                "selectRequired": "選択してください"
+            }
+        },
+        "step9": {
+            "title": "経費支弁者情報",
+            "description": "留学費用を負担する方（経費支弁者）について入力してください。",
+            "progress": "経費支弁者情報",
+            "sponsorType": "経費支弁者の種別",
+            "name": "氏名",
+            "phone": "電話番号",
+            "address": "住所",
+            "occupation": "職業",
+            "employer": "勤務先名",
+            "annualIncome": "年間収入（現地通貨）",
+            "requiredDocuments": "必要書類",
+            "balanceFile": "残高証明書（必須）",
+            "statementFile": "預金通帳（過去6ヶ月分）（必須）",
+            "letterFile": "経費支弁書（必須）",
+            "options": {
+                "father": "父",
+                "errors": {
+                    "selectRequired": "選択してください",
+                    "nameRequired": "氏名は必須です",
+                    "phoneRequired": "電話番号は必須です",
+                    "addressRequired": "住所は必須です",
+                    "occupationRequired": "職業は必須です",
+                    "employerRequired": "勤務先名は必須です",
+                    "annualIncomeRequired": "年収は必須です",
+                    "balanceFileRequired": "残高証明書",
+                    "statementFileRequired": "預金通帳",
+                    "letterFileRequired": "経費支弁書",
+                    "filesRequired": "以下の書類のアップロードは必須です: "
+                }
+            },
+            "step10": {
+                "title": "在留中の生活計画",
+                "description": "日本での生活について入力してください。",
+                "progress": "在留中の生活計画",
+                "plannedAddress": "予定住所",
+                "supporter": "生活費負担者",
+                "partTimeJob": "アルバイトをする予定はありますか？",
+                "partTimeJobReason": "理由",
+                "yes": "はい",
+                "no": "いいえ",
+                "next": "確認画面へ",
+                "options": {
+                    "dormitory": "学生寮",
+                    "apartment": "アパート",
+                    "relative": "親戚・知人宅",
+                    "undecided": "未定",
+                    "self": "本人",
+                    "family": "家族（経費支弁者）",
+                    "scholarship": "奨学金",
+                    "other": "その他"
+                },
+                "placeholders": {
+                    "partTimeJobReason": "生活費の足しにするため、社会経験のためなど"
+                },
+                "errors": {
+                    "inputRequired": "入力してください",
+                    "selectRequired": "選択してください",
+                    "reasonRequired": "理由を入力してください"
+                }
+            }
+        },
+        "confirm": {
+            "title": "確認・提出",
+            "pageTitle": "入力内容の確認",
+            "description": "以下の内容で申請します。よろしければ「提出する」を押してください。",
+            "sections": {
+                "basicInfo": "基本情報",
+                "passportInfo": "パスポート情報",
+                "familyInfo": "家族・緊急連絡先",
+                "japaneseStudy": "日本語学習歴",
+                "education": "最終学歴",
+                "workHistory": "職歴",
+                "travelHistory": "日本渡航歴",
+                "studyPurpose": "留学目的",
+                "financialSponsor": "経費支弁者",
+                "lifePlan": "日本での生活計画",
+                "documents": "提出書類確認"
+            },
+            "labels": {
+                "nameRomaji": "氏名（ローマ字）",
+                "nameNative": "氏名（母国語）",
+                "birthDate": "生年月日",
+                "nationality": "国籍",
+                "homeAddress": "本国住所",
+                "homePhone": "本国電話番号",
+                "email": "メールアドレス",
+                "passportNumber": "パスポート番号",
+                "issueDate": "発行日",
+                "expiryDate": "有効期限",
+                "father": "父親",
+                "mother": "母親",
+                "emergencyContact": "緊急連絡先",
+                "name": "氏名",
+                "occupation": "職業",
+                "relation": "続柄",
+                "phone": "電話番号",
+                "institutionName": "学習機関",
+                "period": "学習期間",
+                "totalHours": "総学習時間",
+                "jlptScore": "JLPT",
+                "schoolName": "学校名",
+                "graduationYear": "卒業年",
+                "major": "専攻",
+                "companyName": "会社名",
+                "workPeriod": "勤務期間",
+                "jobDescription": "職務内容",
+                "hasVisitedJapan": "訪日経験",
+                "visitDate": "訪問時期",
+                "visitPurpose": "目的",
+                "hasAppliedVisa": "ビザ申請歴",
+                "applicationDetails": "詳細",
+                "reasonForJapan": "来日理由",
+                "reasonForSchool": "本校選択理由",
+                "futurePlan": "将来の計画",
+                "sponsorType": "種別",
+                "address": "住所",
+                "employer": "勤務先",
+                "annualIncome": "年収",
+                "plannedAddress": "予定住所",
+                "supporter": "生活費負担者",
+                "partTimeJob": "アルバイト予定",
+                "partTimeJobReason": "理由"
+            },
+            "files": {
+                "passportFileName": "パスポート（写真ページ）",
+                "proofFileName": "日本語学習証明書",
+                "jlptFileName": "JLPT/NAT/J.TEST等の合格証明書",
+                "diplomaFileName": "最終学歴の卒業証明書",
+                "transcriptFileName": "最終学歴の成績証明書",
+                "balanceFileName": "残高証明書",
+                "statementFileName": "預金通帳（過去6ヶ月分）",
+                "letterFileName": "経費支弁書",
+                "optional": "(任意)"
+            },
+            "submit": "提出する",
+            "incompleteFiles": "※ 必須書類がすべてアップロードされていません。前のステップに戻って確認してください。",
+            "yes": "あり",
+            "no": "なし"
+        }
+    },
+    "complete": {
+        "title": "申請完了",
+        "message": "申請が完了しました。ご協力ありがとうございました。",
+        "nextSteps": "学校から連絡があるまでお待ちください。",
+        "backToHome": "ホームに戻る"
+    }
+}

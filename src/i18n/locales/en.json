@@ -1,0 +1,567 @@
+{
+    "common": {
+        "next": "Next",
+        "back": "Back",
+        "submit": "Submit",
+        "select": "Select",
+        "copyright": "© {year} Japanese Language School. All rights reserved.",
+        "login": "Login",
+        "required": "Required",
+        "optional": "Optional",
+        "loading": "Loading...",
+        "error": "An error occurred"
+    },
+    "home": {
+        "title": "Student Visa Application Form",
+        "welcome": "Welcome",
+        "selectLanguage": "Select Language",
+        "start": "Start Application",
+        "description": "Apply for your student visa to Japan online with ease"
+    },
+    "login": {
+        "title": "Login",
+        "email": "Email Address",
+        "password": "Password",
+        "submit": "Login",
+        "forgotPassword": "Forgot your password?",
+        "register": "Register here",
+        "errors": {
+            "invalidEmail": "Please enter a valid email address",
+            "required": "This field is required"
+        }
+    },
+    "selectType": {
+        "title": "Select Application Type",
+        "description": "Please select the applicable application type and click 'Next'.",
+        "progress": "Application Type Selection",
+        "new": {
+            "title": "New Application (COE)",
+            "description": "Apply for Certificate of Eligibility."
+        },
+        "renewal": {
+            "step1": {
+                "title": "Basic Information",
+                "description": "Please enter your current information.",
+                "progress": "Basic Info (Renewal)",
+                "name": "Name",
+                "birthDate": "Date of Birth",
+                "nationality": "Nationality",
+                "address": "Current Address (Japan)",
+                "phone": "Phone Number",
+                "email": "Email Address",
+                "placeholders": {
+                    "name": "YAMADA TARO",
+                    "nationality": "China",
+                    "address": "Shinjuku-ku, Tokyo...",
+                    "phone": "090-1234-5678"
+                },
+                "errors": {
+                    "nameRequired": "Name is required",
+                    "birthDateRequired": "Date of birth is required",
+                    "nationalityRequired": "Nationality is required",
+                    "addressRequired": "Current address is required",
+                    "phoneRequired": "Phone number is required",
+                    "emailInvalid": "Please enter a valid email address"
+                }
+            },
+            "step1b": {
+                "title": "Residence Card & Passport Info",
+                "description": "Please enter your residence card and passport information.",
+                "progress": "Residence & Passport",
+                "sections": {
+                    "residenceCard": "Residence Card Info",
+                    "passport": "Passport Info"
+                },
+                "residenceCardNumber": "Residence Card Number",
+                "residenceExpiry": "Period of Stay (Expiration)",
+                "passportNumber": "Passport Number",
+                "passportExpiry": "Passport Expiry Date",
+                "files": {
+                    "residenceCard": "Residence Card (Both Sides)",
+                    "passport": "Passport (Photo Page)"
+                },
+                "note": "* You can upload these later if you don't have them right now.",
+                "placeholders": {
+                    "residenceCardNumber": "AB12345678CD"
+                },
+                "errors": {
+                    "residenceCardNumberRequired": "Residence card number is required",
+                    "residenceExpiryRequired": "Expiration date is required",
+                    "passportNumberRequired": "Passport number is required",
+                    "passportExpiryRequired": "Passport expiry date is required"
+                }
+            },
+            "step2": {
+                "title": "Living Situation",
+                "description": "Please enter your current living situation.",
+                "progress": "Living Situation",
+                "address": "Current Address",
+                "rent": "Rent (Monthly/JPY)",
+                "supporter": "Financial Supporter",
+                "placeholders": {
+                    "address": "Shinjuku-ku, Tokyo...",
+                    "rent": "50000"
+                },
+                "options": {
+                    "self": "Self (Including Part-time Job)",
+                    "family": "Family (Remittance)",
+                    "scholarship": "Scholarship",
+                    "other": "Other"
+                },
+                "errors": {
+                    "addressRequired": "Current address is required",
+                    "rentRequired": "Please enter rent",
+                    "supporterRequired": "Please select a financial supporter"
+                }
+            },
+            "step3": {
+                "title": "Part-time Job Information",
+                "description": "Do you currently have a part-time job?",
+                "progress": "Part-time Job",
+                "hasPartTimeJob": "Do you have a part-time job?",
+                "employerName": "Employer Name",
+                "employerAddress": "Employer Address",
+                "weeklyHours": "Weekly Hours",
+                "monthlyIncome": "Monthly Income (JPY)",
+                "payslipFile": "Payslip (Last 3 months)",
+                "yes": "Yes",
+                "no": "No",
+                "errors": {
+                    "selectRequired": "Please select an option",
+                    "employerNameRequired": "Employer name is required",
+                    "employerAddressRequired": "Employer address is required",
+                    "weeklyHoursRequired": "Weekly hours is required",
+                    "monthlyIncomeRequired": "Monthly income is required",
+                    "payslipFileRequired": "Payslip upload is required"
+                }
+            },
+            "step4": {
+                "title": "Financial Sponsor Information",
+                "description": "Please enter information about your financial sponsor.",
+                "progress": "Financial Sponsor (Renewal)",
+                "sponsorName": "Name",
+                "relation": "Relationship",
+                "annualIncome": "Annual Income (Local Currency)",
+                "remittanceAmount": "Monthly Remittance (JPY)",
+                "remittanceFile": "Remittance Certificate (Copy of Passbook etc.)",
+                "placeholders": {
+                    "relation": "Father, Mother, etc.",
+                    "remittanceAmount": "50000"
+                },
+                "errors": {
+                    "sponsorNameRequired": "Name is required",
+                    "relationRequired": "Relationship is required",
+                    "annualIncomeRequired": "Annual income is required"
+                }
+            },
+            "step5": {
+                "title": "Document Verification",
+                "description": "Please check if all required documents are uploaded.",
+                "progress": "Document Check",
+                "labels": {
+                    "residenceCard": "Residence Card (Both Sides)",
+                    "passport": "Passport (Photo Page)",
+                    "payslip": "Payslip",
+                    "remittance": "Remittance Certificate"
+                },
+                "status": {
+                    "uploaded": "Uploaded",
+                    "notUploaded": "Not Uploaded",
+                    "required": "Required"
+                },
+                "buttons": {
+                    "replace": "Replace File",
+                    "upload": "Upload File",
+                    "next": "Proceed to Confirmation"
+                }
+            },
+            "step6": {
+                "title": "Confirmation",
+                "description": "Please review your application details below. If everything is correct, click 'Submit'.",
+                "progress": "Confirmation",
+                "sections": {
+                    "basicInfo": "Basic Information",
+                    "residenceInfo": "Residence Card & Passport",
+                    "livingInfo": "Living Situation",
+                    "partTimeJobInfo": "Part-time Job",
+                    "sponsorInfo": "Financial Sponsor",
+                    "documents": "Document Verification"
+                },
+                "labels": {
+                    "name": "Name",
+                    "birthDate": "Date of Birth",
+                    "nationality": "Nationality",
+                    "address": "Current Address",
+                    "phone": "Phone Number",
+                    "email": "Email",
+                    "residenceCard": "Residence Card",
+                    "residenceCardNumber": "Residence Card Number",
+                    "residenceExpiry": "Residence Expiry",
+                    "passport": "Passport",
+                    "passportNumber": "Passport Number",
+                    "passportExpiry": "Passport Expiry",
+                    "rent": "Rent (Monthly)",
+                    "supporter": "Financial Supporter",
+                    "partTimeJob": "Part-time Job",
+                    "employerName": "Employer Name",
+                    "employerAddress": "Employer Address",
+                    "weeklyHours": "Weekly Hours",
+                    "monthlyIncome": "Monthly Income",
+                    "sponsorName": "Name",
+                    "relation": "Relationship",
+                    "annualIncome": "Annual Income",
+                    "remittanceAmount": "Monthly Remittance"
+                },
+                "files": {
+                    "residenceCardFileName": "Residence Card (Both Sides)",
+                    "passportFileName": "Passport (Photo Page)",
+                    "payslipFileName": "Payslip (If working part-time)",
+                    "remittanceFileName": "Remittance Certificate (If receiving support)",
+                    "optional": "(Optional)"
+                },
+                "incompleteFiles": "* Required documents are missing. Please go back to previous steps to upload them.",
+                "yes": "Yes",
+                "no": "No"
+            }
+        },
+        "errors": {
+            "selectType": "Please select an application type"
+        }
+    },
+    "newApplication": {
+        "step1": {
+            "title": "Basic Information",
+            "description": "Please enter your basic information.",
+            "progress": "Basic Information",
+            "nameRomaji": "Name (Romaji)",
+            "nameNative": "Name (Native Language)",
+            "birthDate": "Date of Birth",
+            "nationality": "Nationality",
+            "homeAddress": "Home Address",
+            "homePhone": "Home Phone Number",
+            "email": "Email Address",
+            "nationalitySelect": "Please select",
+            "nationalityOptions": {
+                "China": "China",
+                "Vietnam": "Vietnam",
+                "Nepal": "Nepal",
+                "Other": "Other"
+            },
+            "placeholders": {
+                "nameRomaji": "YAMADA TARO",
+                "nameNative": "Taro Yamada",
+                "nationality": "China",
+                "homeAddress": "123 Main St, Beijing",
+                "homePhone": "+86-123-4567-8901",
+                "email": "example@email.com"
+            },
+            "errors": {
+                "nameRomajiRequired": "Name (Romaji) is required",
+                "nameNativeRequired": "Name (Native Language) is required",
+                "birthDateRequired": "Date of birth is required",
+                "nationalityRequired": "Nationality is required",
+                "homeAddressRequired": "Home address is required",
+                "homePhoneRequired": "Home phone number is required",
+                "homePhoneInvalid": "Phone number can only contain numbers and symbols",
+                "emailRequired": "Email address is required",
+                "emailInvalid": "Please enter a valid email address"
+            }
+        },
+        "step2": {
+            "title": "Passport Information",
+            "description": "Please enter your passport information and upload the photo page.",
+            "progress": "Passport Info",
+            "passportNumber": "Passport Number",
+            "passportIssueDate": "Date of Issue",
+            "passportExpiryDate": "Date of Expiry",
+            "passportFile": "Passport Photo Page",
+            "placeholders": {
+                "passportNumber": "TR1234567"
+            },
+            "errors": {
+                "passportNumberRequired": "Passport number is required",
+                "passportIssueDateRequired": "Date of issue is required",
+                "passportExpiryDateRequired": "Date of expiry is required",
+                "passportExpiryInvalid": "Expiry date must be after issue date",
+                "passportFileRequired": "Passport image upload is required"
+            }
+        },
+        "step3": {
+            "title": "Family & Emergency Contact",
+            "description": "Please enter your family information and emergency contact.",
+            "progress": "Family & Emergency",
+            "father": "Father's Information",
+            "mother": "Mother's Information",
+            "emergencyContact": "Emergency Contact (Required)",
+            "name": "Name",
+            "birthDate": "Date of Birth",
+            "occupation": "Occupation",
+            "address": "Address",
+            "relation": "Relationship",
+            "phone": "Phone Number",
+            "placeholders": {
+                "relation": "e.g., Father, Mother, Uncle"
+            },
+            "errors": {
+                "nameRequired": "Name is required",
+                "relationRequired": "Relationship is required",
+                "phoneRequired": "Phone number is required"
+            }
+        },
+        "step4": {
+            "title": "Japanese Study History",
+            "description": "Please enter your Japanese study history.",
+            "progress": "JP Study History",
+            "institutionName": "Institution Name",
+            "periodStart": "Study Period (Start)",
+            "periodEnd": "Study Period (End)",
+            "totalHours": "Total Hours",
+            "proofFile": "Certificate of Japanese Study (Required)",
+            "jlptSection": "Japanese Language Proficiency Test (Optional)",
+            "jlptScore": "Score (JLPT/NAT/J.TEST etc.)",
+            "jlptFile": "Certificate/Score Report",
+            "placeholders": {
+                "institutionName": "e.g., Tokyo Japanese Language School",
+                "totalHours": "150",
+                "jlptScore": "e.g., JLPT N3 Passed"
+            },
+            "errors": {
+                "institutionNameRequired": "Institution name is required",
+                "periodStartRequired": "Start date is required",
+                "periodEndRequired": "End date is required",
+                "totalHoursRequired": "Total hours is required",
+                "periodEndInvalid": "End date must be after start date",
+                "proofFileRequired": "Upload of Japanese study certificate is required"
+            }
+        },
+        "step5": {
+            "title": "Education History",
+            "description": "Please enter your final education history.",
+            "progress": "Education",
+            "schoolName": "Last School Name",
+            "graduationYear": "Graduation Year",
+            "country": "Location (Country)",
+            "diplomaFile": "Graduation Certificate (Required)",
+            "transcriptFile": "Transcript (Required)",
+            "placeholders": {
+                "schoolName": "e.g., Peking University",
+                "graduationYear": "2023",
+                "country": "China"
+            },
+            "errors": {
+                "schoolNameRequired": "Last school name is required",
+                "graduationYearRequired": "Graduation year is required",
+                "countryRequired": "Country is required",
+                "diplomaFileRequired": "Graduation Certificate",
+                "transcriptFileRequired": "Transcript",
+                "filesRequired": "Upload of the following documents is required: "
+            }
+        },
+        "step6": {
+            "title": "Work History",
+            "description": "Please enter your work history if applicable. If not, please click 'Next'.",
+            "progress": "Work History (Optional)",
+            "companyName": "Company Name",
+            "period": "Period of Employment",
+            "jobDescription": "Job Description",
+            "placeholders": {
+                "companyName": "e.g., ABC Inc.",
+                "period": "e.g., Apr 2020 - Mar 2023",
+                "jobDescription": "Briefly describe your duties"
+            }
+        },
+        "step7": {
+            "title": "Travel & Visa History",
+            "description": "Please enter your travel history to Japan and past visa applications.",
+            "progress": "Travel & Visa",
+            "hasVisitedJapan": "Have you visited Japan before?",
+            "visitDate": "Date of Most Recent Visit",
+            "visitPurpose": "Purpose of Visit",
+            "hasAppliedVisa": "Have you applied for a Japanese visa before? (Including rejections)",
+            "applicationDetails": "Application Details",
+            "yes": "Yes",
+            "no": "No",
+            "placeholders": {
+                "visitPurpose": "Tourism, Short-term study, etc.",
+                "applicationDetails": "When and what type of visa did you apply for? What was the result?"
+            },
+            "errors": {
+                "selectRequired": "Please select an option",
+                "visitDateRequired": "Please enter the date of visit",
+                "visitPurposeRequired": "Please enter the purpose",
+                "applicationDetailsRequired": "Please enter the details"
+            }
+        },
+        "step8": {
+            "title": "Study Purpose & Future Plans",
+            "description": "Please explain your reason for studying in Japan and your plans after graduation.",
+            "progress": "Purpose & Plans",
+            "reasonForJapan": "Why do you want to study in Japan? (50+ characters)",
+            "reasonForSchool": "Why did you choose this school? (50+ characters)",
+            "futurePlan": "Plans after graduation",
+            "options": {
+                "study": "Higher Education (University/Graduate School)",
+                "work": "Employment",
+                "undecided": "Undecided / Return to home country"
+            },
+            "placeholders": {
+                "reasonForJapan": "Please describe your reason in detail",
+                "reasonForSchool": "Please describe your reason",
+                "select": "Please select"
+            },
+            "errors": {
+                "minLength": "Please enter at least 50 characters",
+                "selectRequired": "Please select an option"
+            }
+        },
+        "step9": {
+            "title": "Financial Sponsor Information",
+            "description": "Please enter information about the person who will pay for your study expenses (Financial Sponsor).",
+            "progress": "Financial Sponsor",
+            "sponsorType": "Relationship to Applicant",
+            "name": "Name",
+            "phone": "Phone Number",
+            "address": "Address",
+            "occupation": "Occupation",
+            "employer": "Employer Name",
+            "annualIncome": "Annual Income (Local Currency)",
+            "requiredDocuments": "Required Documents",
+            "balanceFile": "Bank Balance Certificate (Required)",
+            "statementFile": "Bank Statement (Last 6 months) (Required)",
+            "letterFile": "Letter of Financial Support (Required)",
+            "options": {
+                "father": "Father",
+                "mother": "Mother",
+                "self": "Self",
+                "other": "Other"
+            },
+            "errors": {
+                "selectRequired": "Please select an option",
+                "nameRequired": "Name is required",
+                "phoneRequired": "Phone number is required",
+                "addressRequired": "Address is required",
+                "occupationRequired": "Occupation is required",
+                "employerRequired": "Employer name is required",
+                "annualIncomeRequired": "Annual income is required",
+                "balanceFileRequired": "Bank Balance Certificate",
+                "statementFileRequired": "Bank Statement",
+                "letterFileRequired": "Letter of Financial Support",
+                "filesRequired": "Upload of the following documents is required: "
+            }
+        },
+        "step10": {
+            "title": "Life Plan in Japan",
+            "description": "Please enter your plans for living in Japan.",
+            "progress": "Life Plan",
+            "plannedAddress": "Planned Address",
+            "supporter": "Financial Supporter",
+            "partTimeJob": "Do you plan to work part-time?",
+            "partTimeJobReason": "Reason",
+            "yes": "Yes",
+            "no": "No",
+            "next": "Proceed to Confirmation",
+            "options": {
+                "dormitory": "Student Dormitory",
+                "apartment": "Apartment",
+                "relative": "Relative/Friend's House",
+                "undecided": "Undecided",
+                "self": "Self",
+                "family": "Family (Financial Sponsor)",
+                "scholarship": "Scholarship",
+                "other": "Other"
+            },
+            "placeholders": {
+                "partTimeJobReason": "To supplement living expenses, gain social experience, etc."
+            },
+            "errors": {
+                "inputRequired": "Please enter",
+                "selectRequired": "Please select an option",
+                "reasonRequired": "Please enter a reason"
+            }
+        },
+        "confirm": {
+            "title": "Confirmation",
+            "pageTitle": "Confirm Application Details",
+            "description": "Please review your application details below. If everything is correct, click 'Submit'.",
+            "sections": {
+                "basicInfo": "Basic Information",
+                "passportInfo": "Passport Information",
+                "familyInfo": "Family & Emergency Contact",
+                "japaneseStudy": "Japanese Study History",
+                "education": "Education History",
+                "workHistory": "Work History",
+                "travelHistory": "Travel History",
+                "studyPurpose": "Study Purpose",
+                "financialSponsor": "Financial Sponsor",
+                "lifePlan": "Life Plan in Japan",
+                "documents": "Document Verification"
+            },
+            "labels": {
+                "nameRomaji": "Name (Romaji)",
+                "nameNative": "Name (Native)",
+                "birthDate": "Date of Birth",
+                "nationality": "Nationality",
+                "homeAddress": "Home Address",
+                "homePhone": "Home Phone",
+                "email": "Email",
+                "passportNumber": "Passport Number",
+                "issueDate": "Issue Date",
+                "expiryDate": "Expiry Date",
+                "father": "Father",
+                "mother": "Mother",
+                "emergencyContact": "Emergency Contact",
+                "name": "Name",
+                "occupation": "Occupation",
+                "relation": "Relationship",
+                "phone": "Phone",
+                "institutionName": "Institution Name",
+                "period": "Period",
+                "totalHours": "Total Hours",
+                "jlptScore": "JLPT",
+                "schoolName": "School Name",
+                "graduationYear": "Graduation Year",
+                "major": "Major",
+                "companyName": "Company Name",
+                "workPeriod": "Employment Period",
+                "jobDescription": "Job Description",
+                "hasVisitedJapan": "Visited Japan",
+                "visitDate": "Visit Date",
+                "visitPurpose": "Purpose",
+                "hasAppliedVisa": "Visa Application History",
+                "applicationDetails": "Details",
+                "reasonForJapan": "Reason for Japan",
+                "reasonForSchool": "Reason for School",
+                "futurePlan": "Future Plan",
+                "sponsorType": "Type",
+                "address": "Address",
+                "employer": "Employer",
+                "annualIncome": "Annual Income",
+                "plannedAddress": "Planned Address",
+                "supporter": "Supporter",
+                "partTimeJob": "Part-time Job",
+                "partTimeJobReason": "Reason"
+            },
+            "files": {
+                "passportFileName": "Passport (Photo Page)",
+                "proofFileName": "Japanese Study Certificate",
+                "jlptFileName": "JLPT/NAT/J.TEST Certificate",
+                "diplomaFileName": "Graduation Certificate",
+                "transcriptFileName": "Transcript",
+                "balanceFileName": "Bank Balance Certificate",
+                "statementFileName": "Bank Statement (Last 6 months)",
+                "letterFileName": "Letter of Financial Support",
+                "optional": "(Optional)"
+            },
+            "submit": "Submit",
+            "incompleteFiles": "* Required documents are missing. Please go back to previous steps to upload them.",
+            "yes": "Yes",
+            "no": "No"
+        }
+    },
+    "complete": {
+        "title": "Application Complete",
+        "message": "Your application has been submitted successfully. Thank you for your cooperation.",
+        "nextSteps": "Please wait for contact from the school.",
+        "backToHome": "Back to Home"
+    }
+}
