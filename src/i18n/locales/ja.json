@@ -39,193 +39,197 @@
             "description": "在留資格認定証明書の交付申請を行います。"
         },
         "renewal": {
-            "step1": {
-                "title": "基本情報の入力",
-                "description": "現在の情報を入力してください。",
-                "progress": "基本情報（更新）",
-                "name": "氏名",
-                "birthDate": "生年月日",
-                "nationality": "国籍",
-                "address": "現住所（日本）",
-                "phone": "電話番号",
-                "email": "メールアドレス",
-                "placeholders": {
-                    "name": "YAMADA TARO",
-                    "nationality": "China",
-                    "address": "東京都新宿区...",
-                    "phone": "090-1234-5678"
-                },
-                "errors": {
-                    "nameRequired": "氏名は必須です",
-                    "birthDateRequired": "生年月日は必須です",
-                    "nationalityRequired": "国籍は必須です",
-                    "addressRequired": "現住所は必須です",
-                    "phoneRequired": "電話番号は必須です",
-                    "emailInvalid": "有効なメールアドレスを入力してください"
-                }
-            },
-            "step1b": {
-                "title": "在留カード・パスポート情報",
-                "description": "在留カードとパスポートの情報を入力してください。",
-                "progress": "在留カード・パスポート情報",
-                "sections": {
-                    "residenceCard": "在留カード情報",
-                    "passport": "パスポート情報"
-                },
-                "residenceCardNumber": "在留カード番号",
-                "residenceExpiry": "在留期限",
-                "passportNumber": "パスポート番号",
-                "passportExpiry": "パスポート有効期限",
-                "files": {
-                    "residenceCard": "在留カード（両面）",
-                    "passport": "パスポート（写真ページ）"
-                },
-                "note": "※ ここでアップロードしなくても、後でまとめてアップロードできます。",
-                "placeholders": {
-                    "residenceCardNumber": "AB12345678CD"
-                },
-                "errors": {
-                    "residenceCardNumberRequired": "在留カード番号は必須です",
-                    "residenceExpiryRequired": "在留期限は必須です",
-                    "passportNumberRequired": "パスポート番号は必須です",
-                    "passportExpiryRequired": "パスポート有効期限は必須です"
-                }
-            },
-            "step2": {
-                "title": "生活状況の入力",
-                "description": "現在の生活状況について入力してください。",
-                "progress": "生活状況",
-                "address": "現住所",
-                "rent": "家賃（月額・円）",
-                "supporter": "生活費負担者",
-                "placeholders": {
-                    "address": "東京都新宿区...",
-                    "rent": "50000"
-                },
-                "options": {
-                    "self": "本人（アルバイト含む）",
-                    "family": "家族（仕送り）",
-                    "scholarship": "奨学金",
-                    "other": "その他"
-                },
-                "errors": {
-                    "addressRequired": "現住所は必須です",
-                    "rentRequired": "家賃を入力してください",
-                    "supporterRequired": "生活費負担者を選択してください"
-                }
-            },
-            "step3": {
-                "title": "アルバイト情報",
-                "description": "現在、アルバイトをしていますか？",
-                "progress": "アルバイト情報",
-                "hasPartTimeJob": "アルバイトをしていますか？",
-                "employerName": "勤務先名",
-                "employerAddress": "勤務先住所",
-                "weeklyHours": "週の勤務時間（時間）",
-                "monthlyIncome": "月収（円）",
-                "payslipFile": "給与明細（直近3ヶ月分）",
-                "yes": "はい",
-                "no": "いいえ",
-                "errors": {
-                    "selectRequired": "選択してください",
-                    "employerNameRequired": "勤務先名は必須です",
-                    "employerAddressRequired": "住所は必須です",
-                    "weeklyHoursRequired": "週の勤務時間は必須です",
-                    "monthlyIncomeRequired": "月収は必須です",
-                    "payslipFileRequired": "給与明細のアップロードは必須です"
-                }
-            },
-            "step4": {
-                "title": "経費支弁者情報",
-                "description": "経費支弁者（生活費を負担している方）について入力してください。",
-                "progress": "経費支弁者（更新）",
-                "sponsorName": "氏名",
-                "relation": "続柄",
-                "annualIncome": "年間収入（現地通貨）",
-                "remittanceAmount": "月平均仕送り額（円）",
-                "remittanceFile": "送金証明書（通帳のコピーなど）",
-                "placeholders": {
-                    "relation": "父、母など",
-                    "remittanceAmount": "50000"
-                },
-                "errors": {
-                    "sponsorNameRequired": "氏名は必須です",
-                    "relationRequired": "続柄は必須です",
-                    "annualIncomeRequired": "年収は必須です"
-                }
-            },
-            "step5": {
-                "title": "書類アップロード確認",
-                "description": "必要な書類がすべてアップロードされているか確認してください。",
-                "progress": "書類確認",
-                "labels": {
-                    "residenceCard": "在留カード（両面）",
-                    "passport": "パスポート（写真ページ）",
-                    "payslip": "給与明細",
-                    "remittance": "送金証明書"
-                },
-                "status": {
-                    "uploaded": "提出済み",
-                    "notUploaded": "未提出",
-                    "required": "必須"
-                },
-                "buttons": {
-                    "replace": "ファイルを差し替える",
-                    "upload": "ファイルをアップロード",
-                    "next": "確認画面へ"
-                }
-            },
-            "step6": {
-                "title": "入力内容の確認",
-                "description": "以下の内容で申請します。よろしければ「提出する」を押してください。",
-                "progress": "確認・提出",
-                "sections": {
-                    "basicInfo": "基本情報",
-                    "residenceInfo": "在留カード・パスポート情報",
-                    "livingInfo": "生活状況",
-                    "partTimeJobInfo": "アルバイト情報",
-                    "sponsorInfo": "経費支弁者",
-                    "documents": "提出書類確認"
-                },
-                "labels": {
-                    "name": "氏名",
-                    "birthDate": "生年月日",
-                    "nationality": "国籍",
-                    "address": "現住所",
-                    "phone": "電話番号",
-                    "email": "メールアドレス",
-                    "residenceCard": "在留カード",
-                    "residenceCardNumber": "在留カード番号",
-                    "residenceExpiry": "在留期限",
-                    "passport": "パスポート",
-                    "passportNumber": "パスポート番号",
-                    "passportExpiry": "有効期限",
-                    "rent": "家賃（月額）",
-                    "supporter": "生活費負担者",
-                    "partTimeJob": "アルバイト",
-                    "employerName": "勤務先名",
-                    "employerAddress": "勤務先住所",
-                    "weeklyHours": "週の勤務時間",
-                    "monthlyIncome": "月収",
-                    "sponsorName": "氏名",
-                    "relation": "続柄",
-                    "annualIncome": "年間収入",
-                    "remittanceAmount": "月平均仕送り額"
-                },
-                "files": {
-                    "residenceCardFileName": "在留カード（両面）",
-                    "passportFileName": "パスポート（写真ページ）",
-                    "payslipFileName": "給与明細（アルバイトしている場合）",
-                    "remittanceFileName": "送金証明書（仕送りがある場合）",
-                    "optional": "(任意)"
-                },
-                "incompleteFiles": "※ 必須書類がすべてアップロードされていません。前のステップに戻って確認してください。",
-                "yes": "あり",
-                "no": "なし"
-            }
+            "title": "在留期間更新申請",
+            "description": "現在の在留資格の期間を延長します。"
         },
         "errors": {
             "selectType": "申請区分を選択してください"
+        }
+    },
+    "renewal": {
+        "step1": {
+            "title": "基本情報の入力",
+            "description": "現在の情報を入力してください。",
+            "progress": "基本情報（更新）",
+            "name": "氏名",
+            "birthDate": "生年月日",
+            "nationality": "国籍",
+            "address": "現住所（日本）",
+            "phone": "電話番号",
+            "email": "メールアドレス",
+            "placeholders": {
+                "name": "YAMADA TARO",
+                "nationality": "China",
+                "address": "東京都新宿区...",
+                "phone": "090-1234-5678"
+            },
+            "errors": {
+                "nameRequired": "氏名は必須です",
+                "birthDateRequired": "生年月日は必須です",
+                "nationalityRequired": "国籍は必須です",
+                "addressRequired": "現住所は必須です",
+                "phoneRequired": "電話番号は必須です",
+                "emailInvalid": "有効なメールアドレスを入力してください"
+            }
+        },
+        "step1b": {
+            "title": "在留カード・パスポート情報",
+            "description": "在留カードとパスポートの情報を入力してください。",
+            "progress": "在留カード・パスポート情報",
+            "sections": {
+                "residenceCard": "在留カード情報",
+                "passport": "パスポート情報"
+            },
+            "residenceCardNumber": "在留カード番号",
+            "residenceExpiry": "在留期限",
+            "passportNumber": "パスポート番号",
+            "passportExpiry": "パスポート有効期限",
+            "files": {
+                "residenceCard": "在留カード（両面）",
+                "passport": "パスポート（写真ページ）"
+            },
+            "note": "※ ここでアップロードしなくても、後でまとめてアップロードできます。",
+            "placeholders": {
+                "residenceCardNumber": "AB12345678CD"
+            },
+            "errors": {
+                "residenceCardNumberRequired": "在留カード番号は必須です",
+                "residenceExpiryRequired": "在留期限は必須です",
+                "passportNumberRequired": "パスポート番号は必須です",
+                "passportExpiryRequired": "パスポート有効期限は必須です"
+            }
+        },
+        "step2": {
+            "title": "生活状況の入力",
+            "description": "現在の生活状況について入力してください。",
+            "progress": "生活状況",
+            "address": "現住所",
+            "rent": "家賃（月額・円）",
+            "supporter": "生活費負担者",
+            "placeholders": {
+                "address": "東京都新宿区...",
+                "rent": "50000"
+            },
+            "options": {
+                "self": "本人（アルバイト含む）",
+                "family": "家族（仕送り）",
+                "scholarship": "奨学金",
+                "other": "その他"
+            },
+            "errors": {
+                "addressRequired": "現住所は必須です",
+                "rentRequired": "家賃を入力してください",
+                "supporterRequired": "生活費負担者を選択してください"
+            }
+        },
+        "step3": {
+            "title": "アルバイト情報",
+            "description": "現在、アルバイトをしていますか？",
+            "progress": "アルバイト情報",
+            "hasPartTimeJob": "アルバイトをしていますか？",
+            "employerName": "勤務先名",
+            "employerAddress": "勤務先住所",
+            "weeklyHours": "週の勤務時間（時間）",
+            "monthlyIncome": "月収（円）",
+            "payslipFile": "給与明細（直近3ヶ月分）",
+            "yes": "はい",
+            "no": "いいえ",
+            "errors": {
+                "selectRequired": "選択してください",
+                "employerNameRequired": "勤務先名は必須です",
+                "employerAddressRequired": "住所は必須です",
+                "weeklyHoursRequired": "週の勤務時間は必須です",
+                "monthlyIncomeRequired": "月収は必須です",
+                "payslipFileRequired": "給与明細のアップロードは必須です"
+            }
+        },
+        "step4": {
+            "title": "経費支弁者情報",
+            "description": "経費支弁者（生活費を負担している方）について入力してください。",
+            "progress": "経費支弁者（更新）",
+            "sponsorName": "氏名",
+            "relation": "続柄",
+            "annualIncome": "年間収入（現地通貨）",
+            "remittanceAmount": "月平均仕送り額（円）",
+            "remittanceFile": "送金証明書（通帳のコピーなど）",
+            "placeholders": {
+                "relation": "父、母など",
+                "remittanceAmount": "50000"
+            },
+            "errors": {
+                "sponsorNameRequired": "氏名は必須です",
+                "relationRequired": "続柄は必須です",
+                "annualIncomeRequired": "年収は必須です"
+            }
+        },
+        "step5": {
+            "title": "書類アップロード確認",
+            "description": "必要な書類がすべてアップロードされているか確認してください。",
+            "progress": "書類確認",
+            "labels": {
+                "residenceCard": "在留カード（両面）",
+                "passport": "パスポート（写真ページ）",
+                "payslip": "給与明細",
+                "remittance": "送金証明書"
+            },
+            "status": {
+                "uploaded": "提出済み",
+                "notUploaded": "未提出",
+                "required": "必須"
+            },
+            "buttons": {
+                "replace": "ファイルを差し替える",
+                "upload": "ファイルをアップロード",
+                "next": "確認画面へ"
+            }
+        },
+        "step6": {
+            "title": "入力内容の確認",
+            "description": "以下の内容で申請します。よろしければ「提出する」を押してください。",
+            "progress": "確認・提出",
+            "sections": {
+                "basicInfo": "基本情報",
+                "residenceInfo": "在留カード・パスポート情報",
+                "livingInfo": "生活状況",
+                "partTimeJobInfo": "アルバイト情報",
+                "sponsorInfo": "経費支弁者",
+                "documents": "提出書類確認"
+            },
+            "labels": {
+                "name": "氏名",
+                "birthDate": "生年月日",
+                "nationality": "国籍",
+                "address": "現住所",
+                "phone": "電話番号",
+                "email": "メールアドレス",
+                "residenceCard": "在留カード",
+                "residenceCardNumber": "在留カード番号",
+                "residenceExpiry": "在留期限",
+                "passport": "パスポート",
+                "passportNumber": "パスポート番号",
+                "passportExpiry": "有効期限",
+                "rent": "家賃（月額）",
+                "supporter": "生活費負担者",
+                "partTimeJob": "アルバイト",
+                "employerName": "勤務先名",
+                "employerAddress": "勤務先住所",
+                "weeklyHours": "週の勤務時間",
+                "monthlyIncome": "月収",
+                "sponsorName": "氏名",
+                "relation": "続柄",
+                "annualIncome": "年間収入",
+                "remittanceAmount": "月平均仕送り額"
+            },
+            "files": {
+                "residenceCardFileName": "在留カード（両面）",
+                "passportFileName": "パスポート（写真ページ）",
+                "payslipFileName": "給与明細（アルバイトしている場合）",
+                "remittanceFileName": "送金証明書（仕送りがある場合）",
+                "optional": "(任意)"
+            },
+            "incompleteFiles": "※ 必須書類がすべてアップロードされていません。前のステップに戻って確認してください。",
+            "yes": "あり",
+            "no": "なし"
         }
     },
     "newApplication": {

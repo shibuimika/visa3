@@ -39,193 +39,197 @@
             "description": "申请在留资格认定证明书。"
         },
         "renewal": {
-            "step1": {
-                "title": "基本信息输入",
-                "description": "请输入当前信息。",
-                "progress": "基本信息（更新）",
-                "name": "姓名",
-                "birthDate": "出生日期",
-                "nationality": "国籍",
-                "address": "现住所（日本）",
-                "phone": "电话号码",
-                "email": "电子邮箱",
-                "placeholders": {
-                    "name": "YAMADA TARO",
-                    "nationality": "China",
-                    "address": "东京都新宿区...",
-                    "phone": "090-1234-5678"
-                },
-                "errors": {
-                    "nameRequired": "姓名是必须的",
-                    "birthDateRequired": "出生日期是必须的",
-                    "nationalityRequired": "国籍是必须的",
-                    "addressRequired": "现住所是必须的",
-                    "phoneRequired": "电话号码是必须的",
-                    "emailInvalid": "请输入有效的电子邮箱地址"
-                }
-            },
-            "step1b": {
-                "title": "在留卡・护照信息",
-                "description": "请输入在留卡和护照信息。",
-                "progress": "在留卡・护照信息",
-                "sections": {
-                    "residenceCard": "在留卡信息",
-                    "passport": "护照信息"
-                },
-                "residenceCardNumber": "在留卡号码",
-                "residenceExpiry": "在留期限",
-                "passportNumber": "护照号码",
-                "passportExpiry": "护照有效期",
-                "files": {
-                    "residenceCard": "在留卡（双面）",
-                    "passport": "护照（照片页）"
-                },
-                "note": "※ 即使现在不上传，也可以稍后一起上传。",
-                "placeholders": {
-                    "residenceCardNumber": "AB12345678CD"
-                },
-                "errors": {
-                    "residenceCardNumberRequired": "在留卡号码是必须的",
-                    "residenceExpiryRequired": "在留期限是必须的",
-                    "passportNumberRequired": "护照号码是必须的",
-                    "passportExpiryRequired": "护照有效期是必须的"
-                }
-            },
-            "step2": {
-                "title": "生活状况输入",
-                "description": "请输入当前的生活状况。",
-                "progress": "生活状况",
-                "address": "现住所",
-                "rent": "房租（月额・日元）",
-                "supporter": "生活费负担者",
-                "placeholders": {
-                    "address": "东京都新宿区...",
-                    "rent": "50000"
-                },
-                "options": {
-                    "self": "本人（包括打工）",
-                    "family": "家族（汇款）",
-                    "scholarship": "奖学金",
-                    "other": "其他"
-                },
-                "errors": {
-                    "addressRequired": "现住所是必须的",
-                    "rentRequired": "请输入房租",
-                    "supporterRequired": "请选择生活费负担者"
-                }
-            },
-            "step3": {
-                "title": "打工信息",
-                "description": "目前有在打工吗？",
-                "progress": "打工信息",
-                "hasPartTimeJob": "有在打工吗？",
-                "employerName": "工作单位名称",
-                "employerAddress": "工作单位地址",
-                "weeklyHours": "周工作时间（小时）",
-                "monthlyIncome": "月收入（日元）",
-                "payslipFile": "工资明细（最近3个月）",
-                "yes": "有",
-                "no": "没有",
-                "errors": {
-                    "selectRequired": "请选择",
-                    "employerNameRequired": "工作单位名称是必须的",
-                    "employerAddressRequired": "工作单位地址是必须的",
-                    "weeklyHoursRequired": "周工作时间是必须的",
-                    "monthlyIncomeRequired": "月收入是必须的",
-                    "payslipFileRequired": "必须上传工资明细"
-                }
-            },
-            "step4": {
-                "title": "经费支付人信息",
-                "description": "请输入经费支付人（负担生活费的人）的信息。",
-                "progress": "经费支付人（更新）",
-                "sponsorName": "姓名",
-                "relation": "关系",
-                "annualIncome": "年收入（当地货币）",
-                "remittanceAmount": "月平均汇款额（日元）",
-                "remittanceFile": "汇款证明书（存折复印件等）",
-                "placeholders": {
-                    "relation": "父、母等",
-                    "remittanceAmount": "50000"
-                },
-                "errors": {
-                    "sponsorNameRequired": "姓名是必须的",
-                    "relationRequired": "关系是必须的",
-                    "annualIncomeRequired": "年收入是必须的"
-                }
-            },
-            "step5": {
-                "title": "文件上传确认",
-                "description": "请确认所有必要文件是否已上传。",
-                "progress": "文件确认",
-                "labels": {
-                    "residenceCard": "在留卡（双面）",
-                    "passport": "护照（照片页）",
-                    "payslip": "工资明细",
-                    "remittance": "汇款证明书"
-                },
-                "status": {
-                    "uploaded": "已提交",
-                    "notUploaded": "未提交",
-                    "required": "必须"
-                },
-                "buttons": {
-                    "replace": "更换文件",
-                    "upload": "上传文件",
-                    "next": "前往确认画面"
-                }
-            },
-            "step6": {
-                "title": "确认输入内容",
-                "description": "将申请以下内容。如果没问题，请点击'提交'。",
-                "progress": "确认・提交",
-                "sections": {
-                    "basicInfo": "基本信息",
-                    "residenceInfo": "在留卡・护照信息",
-                    "livingInfo": "生活状况",
-                    "partTimeJobInfo": "打工信息",
-                    "sponsorInfo": "经费支付人",
-                    "documents": "提交文件确认"
-                },
-                "labels": {
-                    "name": "姓名",
-                    "birthDate": "出生日期",
-                    "nationality": "国籍",
-                    "address": "现住所",
-                    "phone": "电话号码",
-                    "email": "电子邮箱",
-                    "residenceCard": "在留卡",
-                    "residenceCardNumber": "在留卡号码",
-                    "residenceExpiry": "在留期限",
-                    "passport": "护照",
-                    "passportNumber": "护照号码",
-                    "passportExpiry": "有效期",
-                    "rent": "房租（月额）",
-                    "supporter": "生活费负担者",
-                    "partTimeJob": "打工",
-                    "employerName": "工作单位名称",
-                    "employerAddress": "工作单位地址",
-                    "weeklyHours": "周工作时间",
-                    "monthlyIncome": "月收入",
-                    "sponsorName": "姓名",
-                    "relation": "关系",
-                    "annualIncome": "年收入",
-                    "remittanceAmount": "月平均汇款额"
-                },
-                "files": {
-                    "residenceCardFileName": "在留卡（双面）",
-                    "passportFileName": "护照（照片页）",
-                    "payslipFileName": "工资明细（如果有打工）",
-                    "remittanceFileName": "汇款证明书（如果有汇款）",
-                    "optional": "(任意)"
-                },
-                "incompleteFiles": "※ 必须文件尚未全部上传。请返回上一步确认。",
-                "yes": "有",
-                "no": "无"
-            }
+            "title": "在留期间更新申请",
+            "description": "申请延长当前的在留资格期间。"
         },
         "errors": {
             "selectType": "请选择申请类型"
+        }
+    },
+    "renewal": {
+        "step1": {
+            "title": "基本信息输入",
+            "description": "请输入当前信息。",
+            "progress": "基本信息（更新）",
+            "name": "姓名",
+            "birthDate": "出生日期",
+            "nationality": "国籍",
+            "address": "现住所（日本）",
+            "phone": "电话号码",
+            "email": "电子邮箱",
+            "placeholders": {
+                "name": "YAMADA TARO",
+                "nationality": "China",
+                "address": "东京都新宿区...",
+                "phone": "090-1234-5678"
+            },
+            "errors": {
+                "nameRequired": "姓名是必须的",
+                "birthDateRequired": "出生日期是必须的",
+                "nationalityRequired": "国籍是必须的",
+                "addressRequired": "现住所是必须的",
+                "phoneRequired": "电话号码是必须的",
+                "emailInvalid": "请输入有效的电子邮箱地址"
+            }
+        },
+        "step1b": {
+            "title": "在留卡・护照信息",
+            "description": "请输入在留卡和护照信息。",
+            "progress": "在留卡・护照信息",
+            "sections": {
+                "residenceCard": "在留卡信息",
+                "passport": "护照信息"
+            },
+            "residenceCardNumber": "在留卡号码",
+            "residenceExpiry": "在留期限",
+            "passportNumber": "护照号码",
+            "passportExpiry": "护照有效期",
+            "files": {
+                "residenceCard": "在留卡（双面）",
+                "passport": "护照（照片页）"
+            },
+            "note": "※ 即使现在不上传，也可以稍后一起上传。",
+            "placeholders": {
+                "residenceCardNumber": "AB12345678CD"
+            },
+            "errors": {
+                "residenceCardNumberRequired": "在留卡号码是必须的",
+                "residenceExpiryRequired": "在留期限是必须的",
+                "passportNumberRequired": "护照号码是必须的",
+                "passportExpiryRequired": "护照有效期是必须的"
+            }
+        },
+        "step2": {
+            "title": "生活状况输入",
+            "description": "请输入当前的生活状况。",
+            "progress": "生活状况",
+            "address": "现住所",
+            "rent": "房租（月额・日元）",
+            "supporter": "生活费负担者",
+            "placeholders": {
+                "address": "东京都新宿区...",
+                "rent": "50000"
+            },
+            "options": {
+                "self": "本人（包括打工）",
+                "family": "家族（汇款）",
+                "scholarship": "奖学金",
+                "other": "其他"
+            },
+            "errors": {
+                "addressRequired": "现住所是必须的",
+                "rentRequired": "请输入房租",
+                "supporterRequired": "请选择生活费负担者"
+            }
+        },
+        "step3": {
+            "title": "打工信息",
+            "description": "目前有在打工吗？",
+            "progress": "打工信息",
+            "hasPartTimeJob": "有在打工吗？",
+            "employerName": "工作单位名称",
+            "employerAddress": "工作单位地址",
+            "weeklyHours": "周工作时间（小时）",
+            "monthlyIncome": "月收入（日元）",
+            "payslipFile": "工资明细（最近3个月）",
+            "yes": "有",
+            "no": "没有",
+            "errors": {
+                "selectRequired": "请选择",
+                "employerNameRequired": "工作单位名称是必须的",
+                "employerAddressRequired": "工作单位地址是必须的",
+                "weeklyHoursRequired": "周工作时间是必须的",
+                "monthlyIncomeRequired": "月收入是必须的",
+                "payslipFileRequired": "必须上传工资明细"
+            }
+        },
+        "step4": {
+            "title": "经费支付人信息",
+            "description": "请输入经费支付人（负担生活费的人）的信息。",
+            "progress": "经费支付人（更新）",
+            "sponsorName": "姓名",
+            "relation": "关系",
+            "annualIncome": "年收入（当地货币）",
+            "remittanceAmount": "月平均汇款额（日元）",
+            "remittanceFile": "汇款证明书（存折复印件等）",
+            "placeholders": {
+                "relation": "父、母等",
+                "remittanceAmount": "50000"
+            },
+            "errors": {
+                "sponsorNameRequired": "姓名是必须的",
+                "relationRequired": "关系是必须的",
+                "annualIncomeRequired": "年收入是必须的"
+            }
+        },
+        "step5": {
+            "title": "文件上传确认",
+            "description": "请确认所有必要文件是否已上传。",
+            "progress": "文件确认",
+            "labels": {
+                "residenceCard": "在留卡（双面）",
+                "passport": "护照（照片页）",
+                "payslip": "工资明细",
+                "remittance": "汇款证明书"
+            },
+            "status": {
+                "uploaded": "已提交",
+                "notUploaded": "未提交",
+                "required": "必须"
+            },
+            "buttons": {
+                "replace": "更换文件",
+                "upload": "上传文件",
+                "next": "前往确认画面"
+            }
+        },
+        "step6": {
+            "title": "确认输入内容",
+            "description": "将申请以下内容。如果没问题，请点击'提交'。",
+            "progress": "确认・提交",
+            "sections": {
+                "basicInfo": "基本信息",
+                "residenceInfo": "在留卡・护照信息",
+                "livingInfo": "生活状况",
+                "partTimeJobInfo": "打工信息",
+                "sponsorInfo": "经费支付人",
+                "documents": "提交文件确认"
+            },
+            "labels": {
+                "name": "姓名",
+                "birthDate": "出生日期",
+                "nationality": "国籍",
+                "address": "现住所",
+                "phone": "电话号码",
+                "email": "电子邮箱",
+                "residenceCard": "在留卡",
+                "residenceCardNumber": "在留卡号码",
+                "residenceExpiry": "在留期限",
+                "passport": "护照",
+                "passportNumber": "护照号码",
+                "passportExpiry": "有效期",
+                "rent": "房租（月额）",
+                "supporter": "生活费负担者",
+                "partTimeJob": "打工",
+                "employerName": "工作单位名称",
+                "employerAddress": "工作单位地址",
+                "weeklyHours": "周工作时间",
+                "monthlyIncome": "月收入",
+                "sponsorName": "姓名",
+                "relation": "关系",
+                "annualIncome": "年收入",
+                "remittanceAmount": "月平均汇款额"
+            },
+            "files": {
+                "residenceCardFileName": "在留卡（双面）",
+                "passportFileName": "护照（照片页）",
+                "payslipFileName": "工资明细（如果有打工）",
+                "remittanceFileName": "汇款证明书（如果有汇款）",
+                "optional": "(任意)"
+            },
+            "incompleteFiles": "※ 必须文件尚未全部上传。请返回上一步确认。",
+            "yes": "有",
+            "no": "无"
         }
     },
     "newApplication": {

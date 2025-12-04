@@ -39,193 +39,197 @@
             "description": "Đăng ký Giấy chứng nhận đủ điều kiện."
         },
         "renewal": {
-            "step1": {
-                "title": "Nhập thông tin cơ bản",
-                "description": "Vui lòng nhập thông tin hiện tại.",
-                "progress": "Thông tin cơ bản (Gia hạn)",
-                "name": "Họ tên",
-                "birthDate": "Ngày sinh",
-                "nationality": "Quốc tịch",
-                "address": "Địa chỉ hiện tại (Nhật Bản)",
-                "phone": "Số điện thoại",
-                "email": "Email",
-                "placeholders": {
-                    "name": "YAMADA TARO",
-                    "nationality": "China",
-                    "address": "Shinjuku-ku, Tokyo...",
-                    "phone": "090-1234-5678"
-                },
-                "errors": {
-                    "nameRequired": "Họ tên là bắt buộc",
-                    "birthDateRequired": "Ngày sinh là bắt buộc",
-                    "nationalityRequired": "Quốc tịch là bắt buộc",
-                    "addressRequired": "Địa chỉ hiện tại là bắt buộc",
-                    "phoneRequired": "Số điện thoại là bắt buộc",
-                    "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ"
-                }
-            },
-            "step1b": {
-                "title": "Thông tin thẻ cư trú & hộ chiếu",
-                "description": "Vui lòng nhập thông tin thẻ cư trú và hộ chiếu.",
-                "progress": "Thẻ cư trú & Hộ chiếu",
-                "sections": {
-                    "residenceCard": "Thông tin thẻ cư trú",
-                    "passport": "Thông tin hộ chiếu"
-                },
-                "residenceCardNumber": "Số thẻ cư trú",
-                "residenceExpiry": "Thời hạn lưu trú",
-                "passportNumber": "Số hộ chiếu",
-                "passportExpiry": "Ngày hết hạn hộ chiếu",
-                "files": {
-                    "residenceCard": "Thẻ cư trú (Hai mặt)",
-                    "passport": "Hộ chiếu (Trang ảnh)"
-                },
-                "note": "* Bạn có thể tải lên sau nếu chưa có ngay bây giờ.",
-                "placeholders": {
-                    "residenceCardNumber": "AB12345678CD"
-                },
-                "errors": {
-                    "residenceCardNumberRequired": "Số thẻ cư trú là bắt buộc",
-                    "residenceExpiryRequired": "Thời hạn lưu trú là bắt buộc",
-                    "passportNumberRequired": "Số hộ chiếu là bắt buộc",
-                    "passportExpiryRequired": "Ngày hết hạn hộ chiếu là bắt buộc"
-                }
-            },
-            "step2": {
-                "title": "Nhập tình trạng sinh hoạt",
-                "description": "Vui lòng nhập tình trạng sinh hoạt hiện tại.",
-                "progress": "Tình trạng sinh hoạt",
-                "address": "Địa chỉ hiện tại",
-                "rent": "Tiền thuê nhà (Hàng tháng/Yên)",
-                "supporter": "Người hỗ trợ chi phí sinh hoạt",
-                "placeholders": {
-                    "address": "Shinjuku-ku, Tokyo...",
-                    "rent": "50000"
-                },
-                "options": {
-                    "self": "Bản thân (Bao gồm làm thêm)",
-                    "family": "Gia đình (Gửi tiền)",
-                    "scholarship": "Học bổng",
-                    "other": "Khác"
-                },
-                "errors": {
-                    "addressRequired": "Địa chỉ hiện tại là bắt buộc",
-                    "rentRequired": "Vui lòng nhập tiền thuê nhà",
-                    "supporterRequired": "Vui lòng chọn người hỗ trợ"
-                }
-            },
-            "step3": {
-                "title": "Thông tin làm thêm",
-                "description": "Hiện tại bạn có làm thêm không?",
-                "progress": "Làm thêm",
-                "hasPartTimeJob": "Bạn có làm thêm không?",
-                "employerName": "Tên nơi làm việc",
-                "employerAddress": "Địa chỉ nơi làm việc",
-                "weeklyHours": "Số giờ làm việc mỗi tuần",
-                "monthlyIncome": "Thu nhập hàng tháng (Yên)",
-                "payslipFile": "Phiếu lương (3 tháng gần nhất)",
-                "yes": "Có",
-                "no": "Không",
-                "errors": {
-                    "selectRequired": "Vui lòng chọn",
-                    "employerNameRequired": "Tên nơi làm việc là bắt buộc",
-                    "employerAddressRequired": "Địa chỉ là bắt buộc",
-                    "weeklyHoursRequired": "Số giờ làm việc là bắt buộc",
-                    "monthlyIncomeRequired": "Thu nhập hàng tháng là bắt buộc",
-                    "payslipFileRequired": "Bắt buộc tải lên phiếu lương"
-                }
-            },
-            "step4": {
-                "title": "Thông tin người bảo lãnh tài chính",
-                "description": "Vui lòng nhập thông tin về người bảo lãnh tài chính.",
-                "progress": "Người bảo lãnh (Gia hạn)",
-                "sponsorName": "Họ tên",
-                "relation": "Mối quan hệ",
-                "annualIncome": "Thu nhập hàng năm (Tiền tệ địa phương)",
-                "remittanceAmount": "Số tiền gửi hàng tháng (Yên)",
-                "remittanceFile": "Giấy chứng nhận gửi tiền (Bản sao sổ ngân hàng, v.v.)",
-                "placeholders": {
-                    "relation": "Cha, Mẹ, v.v.",
-                    "remittanceAmount": "50000"
-                },
-                "errors": {
-                    "sponsorNameRequired": "Họ tên là bắt buộc",
-                    "relationRequired": "Mối quan hệ là bắt buộc",
-                    "annualIncomeRequired": "Thu nhập hàng năm là bắt buộc"
-                }
-            },
-            "step5": {
-                "title": "Xác nhận tải lên tài liệu",
-                "description": "Vui lòng kiểm tra xem tất cả tài liệu cần thiết đã được tải lên chưa.",
-                "progress": "Kiểm tra tài liệu",
-                "labels": {
-                    "residenceCard": "Thẻ cư trú (Hai mặt)",
-                    "passport": "Hộ chiếu (Trang ảnh)",
-                    "payslip": "Phiếu lương",
-                    "remittance": "Giấy chứng nhận gửi tiền"
-                },
-                "status": {
-                    "uploaded": "Đã tải lên",
-                    "notUploaded": "Chưa tải lên",
-                    "required": "Bắt buộc"
-                },
-                "buttons": {
-                    "replace": "Thay thế tệp",
-                    "upload": "Tải lên tệp",
-                    "next": "Tiếp tục xác nhận"
-                }
-            },
-            "step6": {
-                "title": "Xác nhận nội dung nhập",
-                "description": "Sẽ đăng ký với nội dung dưới đây. Nếu không có vấn đề gì, hãy nhấn 'Nộp'.",
-                "progress": "Xác nhận & Nộp",
-                "sections": {
-                    "basicInfo": "Thông tin cơ bản",
-                    "residenceInfo": "Thẻ cư trú & Hộ chiếu",
-                    "livingInfo": "Tình trạng sinh hoạt",
-                    "partTimeJobInfo": "Thông tin làm thêm",
-                    "sponsorInfo": "Người bảo lãnh tài chính",
-                    "documents": "Xác minh tài liệu"
-                },
-                "labels": {
-                    "name": "Họ tên",
-                    "birthDate": "Ngày sinh",
-                    "nationality": "Quốc tịch",
-                    "address": "Địa chỉ hiện tại",
-                    "phone": "Số điện thoại",
-                    "email": "Email",
-                    "residenceCard": "Thẻ cư trú",
-                    "residenceCardNumber": "Số thẻ cư trú",
-                    "residenceExpiry": "Thời hạn lưu trú",
-                    "passport": "Hộ chiếu",
-                    "passportNumber": "Số hộ chiếu",
-                    "passportExpiry": "Ngày hết hạn",
-                    "rent": "Tiền thuê nhà (Hàng tháng)",
-                    "supporter": "Người hỗ trợ",
-                    "partTimeJob": "Làm thêm",
-                    "employerName": "Nơi làm việc",
-                    "employerAddress": "Địa chỉ làm việc",
-                    "weeklyHours": "Số giờ làm việc",
-                    "monthlyIncome": "Thu nhập hàng tháng",
-                    "sponsorName": "Họ tên",
-                    "relation": "Mối quan hệ",
-                    "annualIncome": "Thu nhập hàng năm",
-                    "remittanceAmount": "Số tiền gửi hàng tháng"
-                },
-                "files": {
-                    "residenceCardFileName": "Thẻ cư trú (Hai mặt)",
-                    "passportFileName": "Hộ chiếu (Trang ảnh)",
-                    "payslipFileName": "Phiếu lương (Nếu có làm thêm)",
-                    "remittanceFileName": "Giấy chứng nhận gửi tiền (Nếu có hỗ trợ)",
-                    "optional": "(Tùy chọn)"
-                },
-                "incompleteFiles": "* Tài liệu bắt buộc chưa đầy đủ. Vui lòng quay lại các bước trước để tải lên.",
-                "yes": "Có",
-                "no": "Không"
-            }
+            "title": "Gia hạn thời gian lưu trú",
+            "description": "Đăng ký gia hạn thời gian lưu trú hiện tại."
         },
         "errors": {
             "selectType": "Vui lòng chọn loại đơn đăng ký"
+        }
+    },
+    "renewal": {
+        "step1": {
+            "title": "Nhập thông tin cơ bản",
+            "description": "Vui lòng nhập thông tin hiện tại.",
+            "progress": "Thông tin cơ bản (Gia hạn)",
+            "name": "Họ tên",
+            "birthDate": "Ngày sinh",
+            "nationality": "Quốc tịch",
+            "address": "Địa chỉ hiện tại (Nhật Bản)",
+            "phone": "Số điện thoại",
+            "email": "Email",
+            "placeholders": {
+                "name": "YAMADA TARO",
+                "nationality": "China",
+                "address": "Shinjuku-ku, Tokyo...",
+                "phone": "090-1234-5678"
+            },
+            "errors": {
+                "nameRequired": "Họ tên là bắt buộc",
+                "birthDateRequired": "Ngày sinh là bắt buộc",
+                "nationalityRequired": "Quốc tịch là bắt buộc",
+                "addressRequired": "Địa chỉ hiện tại là bắt buộc",
+                "phoneRequired": "Số điện thoại là bắt buộc",
+                "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ"
+            }
+        },
+        "step1b": {
+            "title": "Thông tin thẻ cư trú & hộ chiếu",
+            "description": "Vui lòng nhập thông tin thẻ cư trú và hộ chiếu.",
+            "progress": "Thẻ cư trú & Hộ chiếu",
+            "sections": {
+                "residenceCard": "Thông tin thẻ cư trú",
+                "passport": "Thông tin hộ chiếu"
+            },
+            "residenceCardNumber": "Số thẻ cư trú",
+            "residenceExpiry": "Thời hạn lưu trú",
+            "passportNumber": "Số hộ chiếu",
+            "passportExpiry": "Ngày hết hạn hộ chiếu",
+            "files": {
+                "residenceCard": "Thẻ cư trú (Hai mặt)",
+                "passport": "Hộ chiếu (Trang ảnh)"
+            },
+            "note": "* Bạn có thể tải lên sau nếu chưa có ngay bây giờ.",
+            "placeholders": {
+                "residenceCardNumber": "AB12345678CD"
+            },
+            "errors": {
+                "residenceCardNumberRequired": "Số thẻ cư trú là bắt buộc",
+                "residenceExpiryRequired": "Thời hạn lưu trú là bắt buộc",
+                "passportNumberRequired": "Số hộ chiếu là bắt buộc",
+                "passportExpiryRequired": "Ngày hết hạn hộ chiếu là bắt buộc"
+            }
+        },
+        "step2": {
+            "title": "Nhập tình trạng sinh hoạt",
+            "description": "Vui lòng nhập tình trạng sinh hoạt hiện tại.",
+            "progress": "Tình trạng sinh hoạt",
+            "address": "Địa chỉ hiện tại",
+            "rent": "Tiền thuê nhà (Hàng tháng/Yên)",
+            "supporter": "Người hỗ trợ chi phí sinh hoạt",
+            "placeholders": {
+                "address": "Shinjuku-ku, Tokyo...",
+                "rent": "50000"
+            },
+            "options": {
+                "self": "Bản thân (Bao gồm làm thêm)",
+                "family": "Gia đình (Gửi tiền)",
+                "scholarship": "Học bổng",
+                "other": "Khác"
+            },
+            "errors": {
+                "addressRequired": "Địa chỉ hiện tại là bắt buộc",
+                "rentRequired": "Vui lòng nhập tiền thuê nhà",
+                "supporterRequired": "Vui lòng chọn người hỗ trợ"
+            }
+        },
+        "step3": {
+            "title": "Thông tin làm thêm",
+            "description": "Hiện tại bạn có làm thêm không?",
+            "progress": "Làm thêm",
+            "hasPartTimeJob": "Bạn có làm thêm không?",
+            "employerName": "Tên nơi làm việc",
+            "employerAddress": "Địa chỉ nơi làm việc",
+            "weeklyHours": "Số giờ làm việc mỗi tuần",
+            "monthlyIncome": "Thu nhập hàng tháng (Yên)",
+            "payslipFile": "Phiếu lương (3 tháng gần nhất)",
+            "yes": "Có",
+            "no": "Không",
+            "errors": {
+                "selectRequired": "Vui lòng chọn",
+                "employerNameRequired": "Tên nơi làm việc là bắt buộc",
+                "employerAddressRequired": "Địa chỉ là bắt buộc",
+                "weeklyHoursRequired": "Số giờ làm việc là bắt buộc",
+                "monthlyIncomeRequired": "Thu nhập hàng tháng là bắt buộc",
+                "payslipFileRequired": "Bắt buộc tải lên phiếu lương"
+            }
+        },
+        "step4": {
+            "title": "Thông tin người bảo lãnh tài chính",
+            "description": "Vui lòng nhập thông tin về người bảo lãnh tài chính.",
+            "progress": "Người bảo lãnh (Gia hạn)",
+            "sponsorName": "Họ tên",
+            "relation": "Mối quan hệ",
+            "annualIncome": "Thu nhập hàng năm (Tiền tệ địa phương)",
+            "remittanceAmount": "Số tiền gửi hàng tháng (Yên)",
+            "remittanceFile": "Giấy chứng nhận gửi tiền (Bản sao sổ ngân hàng, v.v.)",
+            "placeholders": {
+                "relation": "Cha, Mẹ, v.v.",
+                "remittanceAmount": "50000"
+            },
+            "errors": {
+                "sponsorNameRequired": "Họ tên là bắt buộc",
+                "relationRequired": "Mối quan hệ là bắt buộc",
+                "annualIncomeRequired": "Thu nhập hàng năm là bắt buộc"
+            }
+        },
+        "step5": {
+            "title": "Xác nhận tải lên tài liệu",
+            "description": "Vui lòng kiểm tra xem tất cả tài liệu cần thiết đã được tải lên chưa.",
+            "progress": "Kiểm tra tài liệu",
+            "labels": {
+                "residenceCard": "Thẻ cư trú (Hai mặt)",
+                "passport": "Hộ chiếu (Trang ảnh)",
+                "payslip": "Phiếu lương",
+                "remittance": "Giấy chứng nhận gửi tiền"
+            },
+            "status": {
+                "uploaded": "Đã tải lên",
+                "notUploaded": "Chưa tải lên",
+                "required": "Bắt buộc"
+            },
+            "buttons": {
+                "replace": "Thay thế tệp",
+                "upload": "Tải lên tệp",
+                "next": "Tiếp tục xác nhận"
+            }
+        },
+        "step6": {
+            "title": "Xác nhận nội dung nhập",
+            "description": "Sẽ đăng ký với nội dung dưới đây. Nếu không có vấn đề gì, hãy nhấn 'Nộp'.",
+            "progress": "Xác nhận & Nộp",
+            "sections": {
+                "basicInfo": "Thông tin cơ bản",
+                "residenceInfo": "Thẻ cư trú & Hộ chiếu",
+                "livingInfo": "Tình trạng sinh hoạt",
+                "partTimeJobInfo": "Thông tin làm thêm",
+                "sponsorInfo": "Người bảo lãnh tài chính",
+                "documents": "Xác minh tài liệu"
+            },
+            "labels": {
+                "name": "Họ tên",
+                "birthDate": "Ngày sinh",
+                "nationality": "Quốc tịch",
+                "address": "Địa chỉ hiện tại",
+                "phone": "Số điện thoại",
+                "email": "Email",
+                "residenceCard": "Thẻ cư trú",
+                "residenceCardNumber": "Số thẻ cư trú",
+                "residenceExpiry": "Thời hạn lưu trú",
+                "passport": "Hộ chiếu",
+                "passportNumber": "Số hộ chiếu",
+                "passportExpiry": "Ngày hết hạn",
+                "rent": "Tiền thuê nhà (Hàng tháng)",
+                "supporter": "Người hỗ trợ",
+                "partTimeJob": "Làm thêm",
+                "employerName": "Nơi làm việc",
+                "employerAddress": "Địa chỉ làm việc",
+                "weeklyHours": "Số giờ làm việc",
+                "monthlyIncome": "Thu nhập hàng tháng",
+                "sponsorName": "Họ tên",
+                "relation": "Mối quan hệ",
+                "annualIncome": "Thu nhập hàng năm",
+                "remittanceAmount": "Số tiền gửi hàng tháng"
+            },
+            "files": {
+                "residenceCardFileName": "Thẻ cư trú (Hai mặt)",
+                "passportFileName": "Hộ chiếu (Trang ảnh)",
+                "payslipFileName": "Phiếu lương (Nếu có làm thêm)",
+                "remittanceFileName": "Giấy chứng nhận gửi tiền (Nếu có hỗ trợ)",
+                "optional": "(Tùy chọn)"
+            },
+            "incompleteFiles": "* Tài liệu bắt buộc chưa đầy đủ. Vui lòng quay lại các bước trước để tải lên.",
+            "yes": "Có",
+            "no": "Không"
         }
     },
     "newApplication": {

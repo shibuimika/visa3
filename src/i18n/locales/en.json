@@ -39,193 +39,197 @@
             "description": "Apply for Certificate of Eligibility."
         },
         "renewal": {
-            "step1": {
-                "title": "Basic Information",
-                "description": "Please enter your current information.",
-                "progress": "Basic Info (Renewal)",
-                "name": "Name",
-                "birthDate": "Date of Birth",
-                "nationality": "Nationality",
-                "address": "Current Address (Japan)",
-                "phone": "Phone Number",
-                "email": "Email Address",
-                "placeholders": {
-                    "name": "YAMADA TARO",
-                    "nationality": "China",
-                    "address": "Shinjuku-ku, Tokyo...",
-                    "phone": "090-1234-5678"
-                },
-                "errors": {
-                    "nameRequired": "Name is required",
-                    "birthDateRequired": "Date of birth is required",
-                    "nationalityRequired": "Nationality is required",
-                    "addressRequired": "Current address is required",
-                    "phoneRequired": "Phone number is required",
-                    "emailInvalid": "Please enter a valid email address"
-                }
-            },
-            "step1b": {
-                "title": "Residence Card & Passport Info",
-                "description": "Please enter your residence card and passport information.",
-                "progress": "Residence & Passport",
-                "sections": {
-                    "residenceCard": "Residence Card Info",
-                    "passport": "Passport Info"
-                },
-                "residenceCardNumber": "Residence Card Number",
-                "residenceExpiry": "Period of Stay (Expiration)",
-                "passportNumber": "Passport Number",
-                "passportExpiry": "Passport Expiry Date",
-                "files": {
-                    "residenceCard": "Residence Card (Both Sides)",
-                    "passport": "Passport (Photo Page)"
-                },
-                "note": "* You can upload these later if you don't have them right now.",
-                "placeholders": {
-                    "residenceCardNumber": "AB12345678CD"
-                },
-                "errors": {
-                    "residenceCardNumberRequired": "Residence card number is required",
-                    "residenceExpiryRequired": "Expiration date is required",
-                    "passportNumberRequired": "Passport number is required",
-                    "passportExpiryRequired": "Passport expiry date is required"
-                }
-            },
-            "step2": {
-                "title": "Living Situation",
-                "description": "Please enter your current living situation.",
-                "progress": "Living Situation",
-                "address": "Current Address",
-                "rent": "Rent (Monthly/JPY)",
-                "supporter": "Financial Supporter",
-                "placeholders": {
-                    "address": "Shinjuku-ku, Tokyo...",
-                    "rent": "50000"
-                },
-                "options": {
-                    "self": "Self (Including Part-time Job)",
-                    "family": "Family (Remittance)",
-                    "scholarship": "Scholarship",
-                    "other": "Other"
-                },
-                "errors": {
-                    "addressRequired": "Current address is required",
-                    "rentRequired": "Please enter rent",
-                    "supporterRequired": "Please select a financial supporter"
-                }
-            },
-            "step3": {
-                "title": "Part-time Job Information",
-                "description": "Do you currently have a part-time job?",
-                "progress": "Part-time Job",
-                "hasPartTimeJob": "Do you have a part-time job?",
-                "employerName": "Employer Name",
-                "employerAddress": "Employer Address",
-                "weeklyHours": "Weekly Hours",
-                "monthlyIncome": "Monthly Income (JPY)",
-                "payslipFile": "Payslip (Last 3 months)",
-                "yes": "Yes",
-                "no": "No",
-                "errors": {
-                    "selectRequired": "Please select an option",
-                    "employerNameRequired": "Employer name is required",
-                    "employerAddressRequired": "Employer address is required",
-                    "weeklyHoursRequired": "Weekly hours is required",
-                    "monthlyIncomeRequired": "Monthly income is required",
-                    "payslipFileRequired": "Payslip upload is required"
-                }
-            },
-            "step4": {
-                "title": "Financial Sponsor Information",
-                "description": "Please enter information about your financial sponsor.",
-                "progress": "Financial Sponsor (Renewal)",
-                "sponsorName": "Name",
-                "relation": "Relationship",
-                "annualIncome": "Annual Income (Local Currency)",
-                "remittanceAmount": "Monthly Remittance (JPY)",
-                "remittanceFile": "Remittance Certificate (Copy of Passbook etc.)",
-                "placeholders": {
-                    "relation": "Father, Mother, etc.",
-                    "remittanceAmount": "50000"
-                },
-                "errors": {
-                    "sponsorNameRequired": "Name is required",
-                    "relationRequired": "Relationship is required",
-                    "annualIncomeRequired": "Annual income is required"
-                }
-            },
-            "step5": {
-                "title": "Document Verification",
-                "description": "Please check if all required documents are uploaded.",
-                "progress": "Document Check",
-                "labels": {
-                    "residenceCard": "Residence Card (Both Sides)",
-                    "passport": "Passport (Photo Page)",
-                    "payslip": "Payslip",
-                    "remittance": "Remittance Certificate"
-                },
-                "status": {
-                    "uploaded": "Uploaded",
-                    "notUploaded": "Not Uploaded",
-                    "required": "Required"
-                },
-                "buttons": {
-                    "replace": "Replace File",
-                    "upload": "Upload File",
-                    "next": "Proceed to Confirmation"
-                }
-            },
-            "step6": {
-                "title": "Confirmation",
-                "description": "Please review your application details below. If everything is correct, click 'Submit'.",
-                "progress": "Confirmation",
-                "sections": {
-                    "basicInfo": "Basic Information",
-                    "residenceInfo": "Residence Card & Passport",
-                    "livingInfo": "Living Situation",
-                    "partTimeJobInfo": "Part-time Job",
-                    "sponsorInfo": "Financial Sponsor",
-                    "documents": "Document Verification"
-                },
-                "labels": {
-                    "name": "Name",
-                    "birthDate": "Date of Birth",
-                    "nationality": "Nationality",
-                    "address": "Current Address",
-                    "phone": "Phone Number",
-                    "email": "Email",
-                    "residenceCard": "Residence Card",
-                    "residenceCardNumber": "Residence Card Number",
-                    "residenceExpiry": "Residence Expiry",
-                    "passport": "Passport",
-                    "passportNumber": "Passport Number",
-                    "passportExpiry": "Passport Expiry",
-                    "rent": "Rent (Monthly)",
-                    "supporter": "Financial Supporter",
-                    "partTimeJob": "Part-time Job",
-                    "employerName": "Employer Name",
-                    "employerAddress": "Employer Address",
-                    "weeklyHours": "Weekly Hours",
-                    "monthlyIncome": "Monthly Income",
-                    "sponsorName": "Name",
-                    "relation": "Relationship",
-                    "annualIncome": "Annual Income",
-                    "remittanceAmount": "Monthly Remittance"
-                },
-                "files": {
-                    "residenceCardFileName": "Residence Card (Both Sides)",
-                    "passportFileName": "Passport (Photo Page)",
-                    "payslipFileName": "Payslip (If working part-time)",
-                    "remittanceFileName": "Remittance Certificate (If receiving support)",
-                    "optional": "(Optional)"
-                },
-                "incompleteFiles": "* Required documents are missing. Please go back to previous steps to upload them.",
-                "yes": "Yes",
-                "no": "No"
-            }
+            "title": "Visa Renewal",
+            "description": "Extend your period of stay."
         },
         "errors": {
             "selectType": "Please select an application type"
+        }
+    },
+    "renewal": {
+        "step1": {
+            "title": "Basic Information",
+            "description": "Please enter your current information.",
+            "progress": "Basic Info (Renewal)",
+            "name": "Name",
+            "birthDate": "Date of Birth",
+            "nationality": "Nationality",
+            "address": "Current Address (Japan)",
+            "phone": "Phone Number",
+            "email": "Email Address",
+            "placeholders": {
+                "name": "YAMADA TARO",
+                "nationality": "China",
+                "address": "Shinjuku-ku, Tokyo...",
+                "phone": "090-1234-5678"
+            },
+            "errors": {
+                "nameRequired": "Name is required",
+                "birthDateRequired": "Date of birth is required",
+                "nationalityRequired": "Nationality is required",
+                "addressRequired": "Current address is required",
+                "phoneRequired": "Phone number is required",
+                "emailInvalid": "Please enter a valid email address"
+            }
+        },
+        "step1b": {
+            "title": "Residence Card & Passport Info",
+            "description": "Please enter your residence card and passport information.",
+            "progress": "Residence & Passport",
+            "sections": {
+                "residenceCard": "Residence Card Info",
+                "passport": "Passport Info"
+            },
+            "residenceCardNumber": "Residence Card Number",
+            "residenceExpiry": "Period of Stay (Expiration)",
+            "passportNumber": "Passport Number",
+            "passportExpiry": "Passport Expiry Date",
+            "files": {
+                "residenceCard": "Residence Card (Both Sides)",
+                "passport": "Passport (Photo Page)"
+            },
+            "note": "* You can upload these later if you don't have them right now.",
+            "placeholders": {
+                "residenceCardNumber": "AB12345678CD"
+            },
+            "errors": {
+                "residenceCardNumberRequired": "Residence card number is required",
+                "residenceExpiryRequired": "Expiration date is required",
+                "passportNumberRequired": "Passport number is required",
+                "passportExpiryRequired": "Passport expiry date is required"
+            }
+        },
+        "step2": {
+            "title": "Living Situation",
+            "description": "Please enter your current living situation.",
+            "progress": "Living Situation",
+            "address": "Current Address",
+            "rent": "Rent (Monthly/JPY)",
+            "supporter": "Financial Supporter",
+            "placeholders": {
+                "address": "Shinjuku-ku, Tokyo...",
+                "rent": "50000"
+            },
+            "options": {
+                "self": "Self (Including Part-time Job)",
+                "family": "Family (Remittance)",
+                "scholarship": "Scholarship",
+                "other": "Other"
+            },
+            "errors": {
+                "addressRequired": "Current address is required",
+                "rentRequired": "Please enter rent",
+                "supporterRequired": "Please select a financial supporter"
+            }
+        },
+        "step3": {
+            "title": "Part-time Job Information",
+            "description": "Do you currently have a part-time job?",
+            "progress": "Part-time Job",
+            "hasPartTimeJob": "Do you have a part-time job?",
+            "employerName": "Employer Name",
+            "employerAddress": "Employer Address",
+            "weeklyHours": "Weekly Hours",
+            "monthlyIncome": "Monthly Income (JPY)",
+            "payslipFile": "Payslip (Last 3 months)",
+            "yes": "Yes",
+            "no": "No",
+            "errors": {
+                "selectRequired": "Please select an option",
+                "employerNameRequired": "Employer name is required",
+                "employerAddressRequired": "Employer address is required",
+                "weeklyHoursRequired": "Weekly hours is required",
+                "monthlyIncomeRequired": "Monthly income is required",
+                "payslipFileRequired": "Payslip upload is required"
+            }
+        },
+        "step4": {
+            "title": "Financial Sponsor Information",
+            "description": "Please enter information about your financial sponsor.",
+            "progress": "Financial Sponsor (Renewal)",
+            "sponsorName": "Name",
+            "relation": "Relationship",
+            "annualIncome": "Annual Income (Local Currency)",
+            "remittanceAmount": "Monthly Remittance (JPY)",
+            "remittanceFile": "Remittance Certificate (Copy of Passbook etc.)",
+            "placeholders": {
+                "relation": "Father, Mother, etc.",
+                "remittanceAmount": "50000"
+            },
+            "errors": {
+                "sponsorNameRequired": "Name is required",
+                "relationRequired": "Relationship is required",
+                "annualIncomeRequired": "Annual income is required"
+            }
+        },
+        "step5": {
+            "title": "Document Verification",
+            "description": "Please check if all required documents are uploaded.",
+            "progress": "Document Check",
+            "labels": {
+                "residenceCard": "Residence Card (Both Sides)",
+                "passport": "Passport (Photo Page)",
+                "payslip": "Payslip",
+                "remittance": "Remittance Certificate"
+            },
+            "status": {
+                "uploaded": "Uploaded",
+                "notUploaded": "Not Uploaded",
+                "required": "Required"
+            },
+            "buttons": {
+                "replace": "Replace File",
+                "upload": "Upload File",
+                "next": "Proceed to Confirmation"
+            }
+        },
+        "step6": {
+            "title": "Confirmation",
+            "description": "Please review your application details below. If everything is correct, click 'Submit'.",
+            "progress": "Confirmation",
+            "sections": {
+                "basicInfo": "Basic Information",
+                "residenceInfo": "Residence Card & Passport",
+                "livingInfo": "Living Situation",
+                "partTimeJobInfo": "Part-time Job",
+                "sponsorInfo": "Financial Sponsor",
+                "documents": "Document Verification"
+            },
+            "labels": {
+                "name": "Name",
+                "birthDate": "Date of Birth",
+                "nationality": "Nationality",
+                "address": "Current Address",
+                "phone": "Phone Number",
+                "email": "Email",
+                "residenceCard": "Residence Card",
+                "residenceCardNumber": "Residence Card Number",
+                "residenceExpiry": "Residence Expiry",
+                "passport": "Passport",
+                "passportNumber": "Passport Number",
+                "passportExpiry": "Passport Expiry",
+                "rent": "Rent (Monthly)",
+                "supporter": "Financial Supporter",
+                "partTimeJob": "Part-time Job",
+                "employerName": "Employer Name",
+                "employerAddress": "Employer Address",
+                "weeklyHours": "Weekly Hours",
+                "monthlyIncome": "Monthly Income",
+                "sponsorName": "Name",
+                "relation": "Relationship",
+                "annualIncome": "Annual Income",
+                "remittanceAmount": "Monthly Remittance"
+            },
+            "files": {
+                "residenceCardFileName": "Residence Card (Both Sides)",
+                "passportFileName": "Passport (Photo Page)",
+                "payslipFileName": "Payslip (If working part-time)",
+                "remittanceFileName": "Remittance Certificate (If receiving support)",
+                "optional": "(Optional)"
+            },
+            "incompleteFiles": "* Required documents are missing. Please go back to previous steps to upload them.",
+            "yes": "Yes",
+            "no": "No"
         }
     },
     "newApplication": {
